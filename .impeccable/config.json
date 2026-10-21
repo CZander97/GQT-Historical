@@ -1,0 +1,84 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "dark-glow",
+        "value": "*",
+        "files": [
+          "website/mockup.html"
+        ],
+        "createdAt": "2026-10-21T00:32:48.243Z",
+        "reason": "brand-kit section 16: title-screen spec calls for a gold glow behind the logo and PRESS START (PS2 game-menu look); intentional"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "website/mockup.html"
+        ],
+        "createdAt": "2026-10-21T00:52:11.957Z",
+        "reason": "user confirmed: asked to bring back the scrolling stat ticker (brand-kit section 14.8)"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "website/mockup.html"
+        ],
+        "createdAt": "2026-10-21T00:52:12.107Z",
+        "reason": "agent: the tinted team-color wash with lens flare is the backdrop in the user's Madden 05 reference video (brand-kit section 11)"
+      },
+      {
+        "rule": "marquee",
+        "value": "*",
+        "files": [
+          "**/mockup.html"
+        ],
+        "createdAt": "2026-10-21T00:58:50.074Z",
+        "reason": "user confirmed: asked to bring back the scrolling stat ticker (brand-kit section 14.8)"
+      },
+      {
+        "rule": "radial-halo",
+        "value": "*",
+        "files": [
+          "**/mockup.html"
+        ],
+        "createdAt": "2026-10-21T00:58:50.219Z",
+        "reason": "agent: tinted team-color wash with lens flare is the backdrop in the user's Madden 05 reference video (brand-kit section 11)"
+      },
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "**/mockup.html"
+        ],
+        "createdAt": "2026-10-21T00:58:53.887Z",
+        "reason": "agent: CRT scan-line texture is part of the PS2-era menu look in brand-kit section 11"
+      },
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "website/src/cards.css"
+        ],
+        "createdAt": "2026-10-21T01:15:11.978Z",
+        "reason": "brand-kit section 17: metallic name/OVR text is the user's own player-card design from Playercards/player_cards.html"
+      },
+      {
+        "rule": "bounce-easing",
+        "value": "cubic-bezier(.2, 1.4, .4, 1)",
+        "createdAt": "2026-10-21T01:15:12.144Z",
+        "reason": "brand-kit section 11: Madden 05 menu bars slide in with a small overshoot snap"
+      }
+    ]
+  },
+  "hook": {
+    "enabled": true,
+    "limits": {
+      "maxFindings": 5,
+      "maxChars": 8000
+    }
+  }
+}

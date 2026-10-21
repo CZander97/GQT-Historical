@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GQT Player Cards</title>
+<style>
+  :root{
+    --ink:#2a1608;
+    --ink-soft:#4a2f1a;
+    --bar-track:#8a6f4a;
+    --bar-track-line:#7a5a34;
+    --bar-fill:#7a2222;
+    --bar-fill-high:#a97a1e;
+    --gold:#8a5a1e;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;
+    padding:0;
+    background:#12100e;
+    font-family:'Georgia','Times New Roman',serif;
+  }
+  .wrap{
+    max-width:1320px;
+    margin:0 auto;
+    padding:3vh 2vw 6vh;
+  }
+  .title{
+    color:#a99a8a;
+    letter-spacing:0.4em;
+    font-size:24px;
+    text-transform:uppercase;
+    margin-bottom:3vh;
+    font-weight:700;
+    text-align:center;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+  }
+  .title span{color:#c9a45e;}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:28px 24px;
+  }
+  @media (max-width:980px){
+    .grid{
+      grid-template-columns:repeat(2, 1fr);
+    }
+  }
+  @media (max-width:560px){
+    .grid{
+      grid-template-columns:1fr;
+    }
+  }
+  .card{
+    position:relative;
+    width:100%;
+    aspect-ratio:469/682;
+    perspective:1600px;
+  }
+  .card-flip{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    transform-style:preserve-3d;
+    transform:rotateY(180deg);
+    animation-name:cardFlipReveal;
+    animation-duration:0.9s;
+    animation-timing-function:cubic-bezier(0.45,0.05,0.35,1);
+    animation-fill-mode:both;
+    box-shadow:0 10px 26px rgba(0,0,0,0.6);
+    border-radius:5px;
+  }
+  @keyframes cardFlipReveal{
+    from{ transform:rotateY(180deg); }
+    to{ transform:rotateY(0deg); }
+  }
+  .face{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border-radius:5px;
+    overflow:hidden;
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
+  }
+  .face.front{ transform:rotateY(0deg); }
+  .face.back{
+    transform:rotateY(180deg);
+    background:#000;
+  }
+  .face.back img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .card .photo{
+    position:absolute;
+    left:14.29%;
+    top:22.14%;
+    width:71.00%;
+    height:48.97%;
+    object-fit:cover;
+    object-position:top center;
+    z-index:1;
+  }
+  .card .photo-fallback{
+    position:absolute;
+    left:14.29%;
+    top:22.14%;
+    width:71.00%;
+    height:48.97%;
+    z-index:1;
+    background:#d8c9a8;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#8a6a3a;
+    font-weight:800;
+    font-size:44px;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+  }
+  .effect-layer{
+    position:absolute;
+    left:14.29%;
+    top:22.14%;
+    width:71.00%;
+    height:48.97%;
+    z-index:10;
+    pointer-events:none;
+    overflow:hidden;
+  }
+  .fx-shine{
+    background-image:linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.7) 50%, transparent 65%);
+    background-size:300% 300%;
+    background-repeat:no-repeat;
+    mix-blend-mode:overlay;
+    animation:shineSweep 3.6s linear infinite;
+  }
+  .fx-shine-soft{
+    background-image:linear-gradient(115deg, transparent 35%, rgba(255,255,255,0.32) 50%, transparent 65%);
+    background-size:300% 300%;
+    background-repeat:no-repeat;
+    mix-blend-mode:overlay;
+    animation:shineSweep 3.6s linear infinite;
+  }
+  @keyframes shineSweep{
+    0%{ background-position:-100% -100%; }
+    100%{ background-position:200% 200%; }
+  }
+  .fx-holo{
+    background:repeating-linear-gradient(100deg,#ff5f6d 0%,#ffc371 10%,#f9f871 20%,#6dff8f 30%,#63d4ff 40%,#a06bff 50%,#ff5f6d 60%);
+    background-size:320% 320%;
+    mix-blend-mode:color-dodge;
+    opacity:0.4;
+    animation:holoDrift 5.5s linear infinite;
+  }
+  .fx-holo-white{
+    background:repeating-linear-gradient(100deg,
+      rgba(255,255,255,0) 0%,
+      rgba(255,255,255,0.55) 8%,
+      rgba(255,255,255,0) 16%,
+      rgba(210,225,255,0.4) 24%,
+      rgba(255,255,255,0) 32%);
+    background-size:320% 320%;
+    mix-blend-mode:overlay;
+    opacity:0.55;
+    animation:holoDrift 5.5s linear infinite;
+  }
+  @keyframes holoDrift{
+    0%{ background-position:0% 50%; }
+    100%{ background-position:100% 50%; }
+  }
+  .fx-sparkle{
+    background-image:radial-gradient(circle, rgba(255,255,255,0.95) 1px, transparent 1.6px);
+    background-size:16px 16px;
+    background-position:0 0;
+    opacity:0.55;
+    mix-blend-mode:screen;
+    animation:sparkleDrift 7s linear infinite, sparkleTwinkle 1.6s steps(2) infinite;
+  }
+  @keyframes sparkleDrift{
+    0%{ background-position:0 0; }
+    100%{ background-position:160px 220px; }
+  }
+  @keyframes sparkleTwinkle{
+    0%{ opacity:0.25; }
+    50%{ opacity:0.65; }
+    100%{ opacity:0.25; }
+  }
+  .name-zone .nm.nm-metallic{
+    background:linear-gradient(180deg,#2a1608 0%,#5a3a1e 25%,#7a5030 45%,#3a2210 62%,#6a4626 80%,#2a1608 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    text-shadow:none;
+  }
+  .name-zone .nm.nm-metallic.nm-silver{
+    background:linear-gradient(180deg,#f7f7f7 0%,#b9b9b9 25%,#ffffff 45%,#7c7c7c 62%,#eeeeee 80%,#9a9a9a 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+  }
+  .card .frame{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    pointer-events:none;
+  }
+
+  .name-zone{
+    position:absolute;
+    left:8%;
+    top:3.2%;
+    width:84%;
+    height:15.6%;
+    z-index:20;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:4px;
+    padding:0% 2% 2%;
+  }
+  .top-line{
+    flex:0 0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .star-row{
+    position:absolute;
+    right:14.71%;
+    top:16%;
+    z-index:20;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    gap:1px;
+  }
+  .star-row .star-icon{
+    width:clamp(13px,3.4vw,19px);
+    height:clamp(13px,3.4vw,19px);
+    background-image:url('star.png');
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    flex-shrink:0;
+  }
+  .name-zone .nm{
+    color:var(--ink);
+    font-weight:700;
+    font-size:clamp(13px,3.4vw,19px);
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+    line-height:1.05;
+    max-width:60%;
+  }
+  .ovr{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:clamp(28px,6.4vw,38px);
+    height:clamp(28px,6.4vw,38px);
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #a4142c, #5a1a6b 40%, #0a0510 85%);
+    box-shadow:0 2px 6px rgba(0,0,0,0.5);
+  }
+  .ovr-num{
+    background:linear-gradient(180deg,#f7f7f7 0%,#b9b9b9 25%,#ffffff 45%,#7c7c7c 62%,#eeeeee 80%,#9a9a9a 100%);
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    font-weight:400;
+    font-size:clamp(18px,4.4vw,24px);
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    text-align:center;
+  }
+  .ovr small{
+    font-size:0.5em;
+    font-weight:700;
+    letter-spacing:0.06em;
+    margin-right:2px;
+    -webkit-text-stroke:0;
+    text-shadow:none;
+  }
+  .s6{
+    color:var(--ink);
+    font-size:clamp(6.5px,1.5vw,8.5px);
+    font-weight:800;
+    letter-spacing:0.02em;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    white-space:nowrap;
+    text-align:right;
+  }
+
+  .bottom-zone{
+    position:absolute;
+    left:8%;
+    top:73.6%;
+    width:84%;
+    height:19%;
+    z-index:3;
+    display:flex;
+    flex-direction:column;
+    padding:0 3.5%;
+  }
+  .stats-row{
+    flex:1 1 auto;
+    min-height:0;
+    display:flex;
+    gap:3%;
+  }
+  .stat6-row{
+    flex:0 0 auto;
+    border-top:1px solid var(--ink-soft);
+    padding-top:3px;
+    text-align:right;
+  }
+  .bars-col{
+    flex:1 1 auto;
+    min-width:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    padding-top:clamp(8px,2.8vw,18px);
+  }
+  .stat-row{
+    display:flex;
+    align-items:center;
+    gap:4px;
+  }
+  .stat-label{
+    flex:0 0 auto;
+    width:38%;
+    font-size:clamp(6px,1.55vw,8.5px);
+    color:var(--ink);
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:0.01em;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+  }
+  .bar-track{
+    flex:1 1 auto;
+    height:clamp(3.5px,0.9vw,6px);
+    background:var(--bar-track);
+    border:1px solid var(--bar-track-line);
+    border-radius:3px;
+    overflow:hidden;
+  }
+  .bar-fill{
+    height:100%;
+    background-image:linear-gradient(90deg,#c0272d 0%,#e8c419 50%,#3fa34d 75%,#3fa34d 100%);
+    background-repeat:no-repeat;
+  }
+
+  .events-col{
+    flex:0 0 30%;
+    padding-left:3%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  .events-title{
+    color:var(--ink-soft);
+    font-size:clamp(5.5px,1.3vw,7.5px);
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    font-weight:700;
+    text-decoration:underline;
+    margin-bottom:2px;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+  }
+  .event-item{
+    color:var(--ink);
+    font-size:clamp(6px,1.5vw,8.5px);
+    font-weight:600;
+    line-height:1.5;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-family:'Helvetica Neue', Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="title">GQT <span>&middot;</span> Invitational Ratings</div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<script>
+// Data pulled from the "Overalls" and "Ratings" tabs of GQT_Historical_Stats.xlsx
+const players = [
+  { name:"Carter", img:"Carter.webp", overall:87,
+    stats:{ Speed:78.2, Strength:76.5, Dexterity:66.8, Gaming:68.7, Driving:85.9, "Penis Size":71.4 },
+    topEvents:["GTA Guesser","Nascar Thunder 2004","ATV Offroad Fury"] },
+  { name:"Chris",  img:"Chris.webp",  overall:79,
+    stats:{ Speed:79.2, Strength:70.0, Dexterity:50.2, Gaming:60.8, Driving:69.2, "Penis Size":68.3 },
+    topEvents:["Yu-Gi-Oh","Mile Run","GTA Guesser"] },
+  { name:"Kjar",   img:"Kjar.png",   overall:70,
+    stats:{ Speed:65.0, Strength:36.8, Dexterity:32.5, Gaming:66.4, Driving:56.7, "Penis Size":64.1 },
+    topEvents:["Beers Drank","College Football","WWE Smackdown Vs Raw 2007"] },
+  { name:"Kyle",   img:"Kyle.png",   overall:78,
+    stats:{ Speed:89.7, Strength:62.5, Dexterity:75.7, Gaming:67.8, Driving:50.1, "Penis Size":59.0 },
+    topEvents:["JP Evolution","WWE Smackdown Vs Raw 2007","40 Yard Dash"] },
+  { name:"Miles",  img:"Miles.webp",  overall:73,
+    stats:{ Speed:42.9, Strength:68.4, Dexterity:53.4, Gaming:65.3, Driving:55.5, "Penis Size":64.7 },
+    topEvents:["JP Evolution Bets","Skyrim Guesser","Turok"] },
+  { name:"Nick",   img:"Nick.webp",   overall:84,
+    stats:{ Speed:61.7, Strength:74.3, Dexterity:79.4, Gaming:87.1, Driving:82.9, "Penis Size":54.7 },
+    topEvents:["Ep III ROTS","ATV Offroad Fury","Turok"] },
+];
+
+// Highest overall first
+players.sort((a,b) => b.overall - a.overall);
+
+const grid = document.getElementById('grid');
+
+players.forEach((p, index) => {
+  const card = document.createElement('div');
+  card.className = 'card';
+
+  const initials = p.name.slice(0,2).toUpperCase();
+  const statEntries = Object.entries(p.stats);
+  const sixth = statEntries[statEntries.length - 1];
+
+  const barRows = statEntries.map(([label, val]) => {
+    const pct = Math.max(0, Math.min(100, val));
+    const bgSize = pct > 0 ? (10000 / pct).toFixed(2) : 10000;
+    return `
+      <div class="stat-row">
+        <div class="stat-label">${label}</div>
+        <div class="bar-track"><div class="bar-fill" style="width:${pct}%; background-size:${bgSize}% 100%;"></div></div>
+      </div>`;
+  }).join('');
+
+  const eventItems = p.topEvents.map((ev, i) => `<div class="event-item">${i+1}. ${ev}</div>`).join('');
+
+  const flipDelay = (0.4 + index * 0.3).toFixed(2);
+
+  const effectClasses = ['fx-shine'];
+  let nameMetallic = false;
+  let nameSilver = false;
+  if (p.overall >= 90) {
+    effectClasses.push('fx-holo', 'fx-sparkle');
+    nameMetallic = true;
+    nameSilver = true;
+  } else if (p.overall >= 80) {
+    effectClasses.push('fx-holo');
+    nameMetallic = true;
+    nameSilver = true;
+  } else if (p.overall >= 75) {
+    effectClasses.push('fx-holo-white');
+    nameMetallic = true;
+  } else {
+    effectClasses[0] = 'fx-shine-soft';
+  }
+  const effectLayers = effectClasses.map(c => `<div class="effect-layer ${c}"></div>`).join('');
+  const nameClass = nameMetallic ? (nameSilver ? ' nm-metallic nm-silver' : ' nm-metallic') : '';
+
+  const starCount = Math.floor(p.overall / 10);
+  const starsHtml = Array.from({length: starCount}).map(() => `<span class="star-icon"></span>`).join('');
+
+  card.innerHTML = `
+    <div class="card-flip" style="animation-delay:${flipDelay}s;">
+      <div class="face back"><img src="card_back.png" alt=""></div>
+      <div class="face front">
+        <img class="photo" src="${p.img}" alt="${p.name}"
+             onerror="this.remove(); this.parentElement.insertAdjacentHTML('afterbegin','<div class=&quot;photo-fallback&quot;>${initials}</div>')">
+        <img class="frame" src="card_template.png" alt="">
+        <div class="name-zone">
+          <div class="top-line">
+            <div class="nm${nameClass}">${p.name}</div>
+            <div class="ovr"><span class="ovr-num">${p.overall}</span></div>
+          </div>
+        </div>
+        <div class="star-row">${starsHtml}</div>
+        <div class="bottom-zone">
+          <div class="stats-row">
+            <div class="bars-col">${barRows}</div>
+            <div class="events-col">
+              <div class="events-title">Top Events</div>
+              ${eventItems}
+            </div>
+          </div>
+          <div class="stat6-row s6">${sixth[0].toUpperCase()} / ${(sixth[1]/10000).toFixed(4)} in</div>
+        </div>
+        ${effectLayers}
+      </div>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>

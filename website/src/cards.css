@@ -1,0 +1,58 @@
+/* Player cards, carried over from Playercards/player_cards.html (the group's own card design). */
+.cards {
+  --ink: #2a1608; --ink-soft: #4a2f1a; --bar-track: #8a6f4a; --bar-track-line: #7a5a34;
+  list-style: none; margin: 0 auto; padding: 0; max-width: 1180px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 24px; font-family: Georgia, "Times New Roman", serif;
+}
+@media (max-width: 980px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .cards { grid-template-columns: 1fr; max-width: 400px; } }
+.card { position: relative; width: 100%; aspect-ratio: 469 / 682; perspective: 1600px; container-type: inline-size; }
+.card-tilt { position: absolute; inset: 0; transform-style: preserve-3d; transition: transform .25s var(--ease-out); }
+.card-flip { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateY(180deg);
+  animation: cardFlipReveal .9s cubic-bezier(.45,.05,.35,1) var(--flip-delay, .4s) both;
+  box-shadow: 0 10px 26px rgba(0,0,0,.6); border-radius: 5px; }
+@keyframes cardFlipReveal { from { transform: rotateY(180deg); } to { transform: rotateY(0deg); } }
+.face { position: absolute; inset: 0; border-radius: 5px; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.face.back { transform: rotateY(180deg); background: #000; }
+.face.back img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card .photo, .card .photo-fallback, .effect-layer { position: absolute; left: 14.29%; top: 22.14%; width: 71%; height: 48.97%; }
+.card .photo { object-fit: cover; object-position: top center; z-index: 1; }
+.card .photo-fallback { z-index: 1; background: #d8c9a8; display: flex; align-items: center; justify-content: center; color: #8a6a3a; font: 800 44px "Helvetica Neue", Arial, sans-serif; }
+.effect-layer { z-index: 10; pointer-events: none; overflow: hidden; }
+.fx-shine { background-image: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.7) 50%, transparent 65%); background-size: 300% 300%; background-repeat: no-repeat; mix-blend-mode: overlay; animation: shineSweep 3.6s linear infinite; }
+.fx-shine-soft { background-image: linear-gradient(115deg, transparent 35%, rgba(255,255,255,.32) 50%, transparent 65%); background-size: 300% 300%; background-repeat: no-repeat; mix-blend-mode: overlay; animation: shineSweep 3.6s linear infinite; }
+@keyframes shineSweep { 0% { background-position: -100% -100%; } 100% { background-position: 200% 200%; } }
+.fx-holo { background: repeating-linear-gradient(100deg, #ff5f6d 0%, #ffc371 10%, #f9f871 20%, #6dff8f 30%, #63d4ff 40%, #a06bff 50%, #ff5f6d 60%); background-size: 320% 320%; mix-blend-mode: color-dodge; opacity: .4; animation: holoDrift 5.5s linear infinite; }
+.fx-holo-white { background: repeating-linear-gradient(100deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.55) 8%, rgba(255,255,255,0) 16%, rgba(210,225,255,.4) 24%, rgba(255,255,255,0) 32%); background-size: 320% 320%; mix-blend-mode: overlay; opacity: .55; animation: holoDrift 5.5s linear infinite; }
+@keyframes holoDrift { 0% { background-position: 0% 50%; } 100% { background-position: 100% 50%; } }
+.fx-sparkle { background-image: radial-gradient(circle, rgba(255,255,255,.95) 1px, transparent 1.6px); background-size: 16px 16px; opacity: .55; mix-blend-mode: screen; animation: sparkleDrift 7s linear infinite, sparkleTwinkle 1.6s steps(2) infinite; }
+@keyframes sparkleDrift { 0% { background-position: 0 0; } 100% { background-position: 160px 220px; } }
+@keyframes sparkleTwinkle { 0% { opacity: .25; } 50% { opacity: .65; } 100% { opacity: .25; } }
+.card .frame { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
+
+/* card text scales with the card itself (container units), so every size reads the same */
+.name-zone { position: absolute; left: 8%; top: 3.2%; width: 84%; height: 15.6%; z-index: 20; display: flex; flex-direction: column; justify-content: center; padding: 0 2% 2%; }
+.top-line { display: flex; align-items: center; justify-content: space-between; }
+.name-zone .nm { margin: 0; color: var(--ink); font-weight: 700; font-size: 5.6cqi; text-transform: uppercase; letter-spacing: .02em; line-height: 1.05; max-width: 60%; }
+.name-zone .nm.nm-metallic { background: linear-gradient(180deg, #2a1608 0%, #5a3a1e 25%, #7a5030 45%, #3a2210 62%, #6a4626 80%, #2a1608 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.name-zone .nm.nm-metallic.nm-silver { background: linear-gradient(180deg, #f7f7f7 0%, #b9b9b9 25%, #ffffff 45%, #7c7c7c 62%, #eeeeee 80%, #9a9a9a 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.star-row { position: absolute; right: 14.71%; top: 16%; z-index: 20; display: flex; justify-content: flex-end; align-items: center; gap: 1px; }
+.star-row .star-icon { width: 5.2cqi; height: 5.2cqi; background: var(--star) center / contain no-repeat; flex-shrink: 0; }
+.ovr { display: flex; align-items: center; justify-content: center; width: 10.5cqi; height: 10.5cqi; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #a4142c, #5a1a6b 40%, #0a0510 85%); box-shadow: 0 2px 6px rgba(0,0,0,.5); }
+.ovr-num { background: linear-gradient(180deg, #f7f7f7 0%, #b9b9b9 25%, #ffffff 45%, #7c7c7c 62%, #eeeeee 80%, #9a9a9a 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  font: 400 6.6cqi "Helvetica Neue", Arial, sans-serif; text-align: center; }
+.bottom-zone { position: absolute; left: 8%; top: 73.6%; width: 84%; height: 19%; z-index: 3; display: flex; flex-direction: column; padding: 0 3.5%; }
+.stats-row { flex: 1 1 auto; min-height: 0; display: flex; gap: 3%; }
+.bars-col { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; justify-content: space-evenly; padding-top: 4cqi; }
+.stat-row { display: flex; align-items: center; gap: 4px; }
+.stat-label { flex: 0 0 auto; width: 38%; font: 700 2.4cqi "Helvetica Neue", Arial, sans-serif; color: var(--ink); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.bar-track { flex: 1 1 auto; height: 1.5cqi; background: var(--bar-track); border: 1px solid var(--bar-track-line); border-radius: 3px; overflow: hidden; }
+.bar-fill { height: 100%; background-image: linear-gradient(90deg, #c0272d 0%, #e8c419 50%, #3fa34d 75%, #3fa34d 100%); background-repeat: no-repeat; }
+.events-col { flex: 0 0 30%; padding-left: 3%; display: flex; flex-direction: column; justify-content: center; }
+.events-title { color: var(--ink-soft); font: 700 2.05cqi "Helvetica Neue", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; text-decoration: underline; margin-bottom: 2px; }
+.events-list { list-style: none; margin: 0; padding: 0; }
+.event-item { color: var(--ink); font: 600 2.35cqi/1.5 "Helvetica Neue", Arial, sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stat6-row { flex: 0 0 auto; border-top: 1px solid var(--ink-soft); padding-top: 3px; text-align: right; }
+.s6 { color: var(--ink); font: 800 2.35cqi "Helvetica Neue", Arial, sans-serif; letter-spacing: .02em; white-space: nowrap; }
+

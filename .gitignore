@@ -1,0 +1,13 @@
+# reinstall with `npm install` in website/
+node_modules/
+# rebuilt from the spreadsheet on every deploy
+website/dist/
+# per-machine settings
+.impeccable/config.local.json
+.claude/settings.local.json
+# Excel lock files and OS clutter
+~$*.xlsx
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log

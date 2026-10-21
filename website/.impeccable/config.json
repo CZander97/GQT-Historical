@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "gradient-text",
+        "value": "*",
+        "files": [
+          "**/src/cards.css"
+        ],
+        "createdAt": "2026-10-21T01:10:45.827Z",
+        "reason": "brand-kit section 17: chrome/metallic text is allowed only in the player cards' own name and OVR styling, carried over from the user's Playercards/player_cards.html"
+      }
+    ]
+  }
+}

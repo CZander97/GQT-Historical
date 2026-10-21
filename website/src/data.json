@@ -1,0 +1,5131 @@
+{
+ "source": "GQT Historical Stats(2).xlsx",
+ "generatedAt": "2026-10-21T03:18:59.668Z",
+ "players": [
+  "Carter",
+  "Chris",
+  "Kjar",
+  "Kyle",
+  "Miles",
+  "Nick"
+ ],
+ "years": [
+  2025,
+  2026
+ ],
+ "events": [
+  {
+   "name": "Beers Drank",
+   "slug": "beers-drank",
+   "category": "Penis Size",
+   "statLabels": [
+    "Beers",
+    "Floor Piss"
+   ]
+  },
+  {
+   "name": "40 Yard Dash",
+   "slug": "40-yard-dash",
+   "category": "Speed",
+   "statLabels": [
+    "Seconds"
+   ]
+  },
+  {
+   "name": "Sling Pigskin",
+   "slug": "sling-pigskin",
+   "category": "Strength",
+   "statLabels": [
+    "Yards"
+   ]
+  },
+  {
+   "name": "Football Accuracy",
+   "slug": "football-accuracy",
+   "category": "Dexterity",
+   "statLabels": [
+    "Targets Hit"
+   ]
+  },
+  {
+   "name": "Mile Run",
+   "slug": "mile-run",
+   "category": "Speed",
+   "statLabels": [
+    "Time"
+   ]
+  },
+  {
+   "name": "Free Throws",
+   "slug": "free-throws",
+   "category": "Dexterity",
+   "statLabels": [
+    "Makes"
+   ]
+  },
+  {
+   "name": "3 Point Contest",
+   "slug": "3-point-contest",
+   "category": "Dexterity",
+   "statLabels": [
+    "Makes"
+   ]
+  },
+  {
+   "name": "Ep III ROTS",
+   "slug": "ep-iii-rots",
+   "category": "Gaming",
+   "statLabels": [
+    "Placement",
+    "Kills"
+   ]
+  },
+  {
+   "name": "ATV Offroad Fury",
+   "slug": "atv-offroad-fury",
+   "category": "Driving",
+   "statLabels": [
+    "Avg Plmt",
+    "Time"
+   ]
+  },
+  {
+   "name": "Turok",
+   "slug": "turok",
+   "category": "Gaming",
+   "statLabels": [
+    "Avg Plmt",
+    "Kills"
+   ]
+  },
+  {
+   "name": "Smash",
+   "slug": "smash",
+   "category": "Gaming",
+   "statLabels": [
+    "Placement",
+    "Kills"
+   ]
+  },
+  {
+   "name": "Mario Kart",
+   "slug": "mario-kart",
+   "category": "Driving",
+   "statLabels": [
+    "Score"
+   ]
+  },
+  {
+   "name": "Quiplash",
+   "slug": "quiplash",
+   "category": "Penis Size",
+   "statLabels": [
+    "Score"
+   ]
+  },
+  {
+   "name": "Beer Pong",
+   "slug": "beer-pong",
+   "category": "Dexterity",
+   "statLabels": [
+    "Placement",
+    "Cups Hit"
+   ]
+  },
+  {
+   "name": "JP Evolution",
+   "slug": "jp-evolution",
+   "category": "Penis Size",
+   "statLabels": [
+    "Placement",
+    "Kills"
+   ]
+  },
+  {
+   "name": "College Football",
+   "slug": "college-football",
+   "category": "Penis Size",
+   "statLabels": [
+    "Yards",
+    "TDs",
+    "Int",
+    "Wins",
+    "Bonus"
+   ]
+  },
+  {
+   "name": "Nascar Thunder 2004",
+   "slug": "nascar-thunder-2004",
+   "category": "Driving",
+   "statLabels": [
+    "DNFs"
+   ]
+  },
+  {
+   "name": "SW Bombad Racing",
+   "slug": "sw-bombad-racing",
+   "category": "Driving",
+   "statLabels": [
+    "Avg Finish",
+    "Best Time"
+   ]
+  },
+  {
+   "name": "WWE Smackdown Vs Raw 2007",
+   "slug": "wwe-smackdown-vs-raw-2007",
+   "category": "Gaming",
+   "statLabels": [
+    "Avg Finish",
+    "KOs"
+   ]
+  },
+  {
+   "name": "Yu-Gi-Oh",
+   "slug": "yu-gi-oh",
+   "category": "Penis Size",
+   "statLabels": [
+    "Value"
+   ]
+  },
+  {
+   "name": "GTA Guesser",
+   "slug": "gta-guesser",
+   "category": "Penis Size",
+   "statLabels": [
+    "Score"
+   ]
+  },
+  {
+   "name": "Skyrim Guesser",
+   "slug": "skyrim-guesser",
+   "category": "Penis Size",
+   "statLabels": [
+    "Score"
+   ]
+  },
+  {
+   "name": "JP Evolution Bets",
+   "slug": "jp-evolution-bets",
+   "category": "Penis Size",
+   "statLabels": [
+    "Bets Won"
+   ]
+  }
+ ],
+ "allStats": [
+  {
+   "player": "Nick",
+   "year": 2025,
+   "total": 778.8,
+   "results": {
+    "40-yard-dash": {
+     "points": 54.33,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 6.12
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 48.33,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 39.5
+      }
+     ]
+    },
+    "football-accuracy": {
+     "points": 50,
+     "stats": [
+      {
+       "label": "Targets Hit",
+       "v": 5
+      }
+     ]
+    },
+    "ep-iii-rots": {
+     "points": 100,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 1
+      },
+      {
+       "label": "Kills",
+       "v": 4
+      }
+     ]
+    },
+    "atv-offroad-fury": {
+     "points": 95.38,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 1
+      },
+      {
+       "label": "Time",
+       "v": {
+        "t": 131,
+        "d": "2:11"
+       }
+      }
+     ]
+    },
+    "turok": {
+     "points": 87,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 1.5
+      },
+      {
+       "label": "Kills",
+       "v": 22
+      }
+     ]
+    },
+    "smash": {
+     "points": 53.5,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 5
+      },
+      {
+       "label": "Kills",
+       "v": 3
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 86.67,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 52
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 55.58,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 6670
+      }
+     ]
+    },
+    "beer-pong": {
+     "points": 84,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 1
+      },
+      {
+       "label": "Cups Hit",
+       "v": 6
+      }
+     ]
+    },
+    "jp-evolution": {
+     "points": 64,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 2
+      },
+      {
+       "label": "Kills",
+       "v": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Carter",
+   "year": 2025,
+   "total": 721.58,
+   "results": {
+    "40-yard-dash": {
+     "points": 65.33,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.79
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 46.67,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 39
+      }
+     ]
+    },
+    "football-accuracy": {
+     "points": 30,
+     "stats": [
+      {
+       "label": "Targets Hit",
+       "v": 3
+      }
+     ]
+    },
+    "ep-iii-rots": {
+     "points": 80.5,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 2
+      },
+      {
+       "label": "Kills",
+       "v": 2
+      }
+     ]
+    },
+    "atv-offroad-fury": {
+     "points": 89.58,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 1.5
+      },
+      {
+       "label": "Time",
+       "v": {
+        "t": 134,
+        "d": "2:14"
+       }
+      }
+     ]
+    },
+    "turok": {
+     "points": 90,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 1
+      },
+      {
+       "label": "Kills",
+       "v": 20
+      }
+     ]
+    },
+    "smash": {
+     "points": 69,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 2
+      },
+      {
+       "label": "Kills",
+       "v": 2
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 85,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 51
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 63.5,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 7620
+      }
+     ]
+    },
+    "beer-pong": {
+     "points": 56,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 3
+      },
+      {
+       "label": "Cups Hit",
+       "v": 4
+      }
+     ]
+    },
+    "jp-evolution": {
+     "points": 46,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 5
+      },
+      {
+       "label": "Kills",
+       "v": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Kyle",
+   "year": 2025,
+   "total": 675.94,
+   "results": {
+    "40-yard-dash": {
+     "points": 79.67,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.36
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 33.33,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 35
+      }
+     ]
+    },
+    "football-accuracy": {
+     "points": 70,
+     "stats": [
+      {
+       "label": "Targets Hit",
+       "v": 7
+      }
+     ]
+    },
+    "ep-iii-rots": {
+     "points": 65.75,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 5
+      },
+      {
+       "label": "Kills",
+       "v": 3
+      }
+     ]
+    },
+    "atv-offroad-fury": {
+     "points": 36.77,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 3
+      },
+      {
+       "label": "Time",
+       "v": {
+        "t": 189,
+        "d": "3:09"
+       }
+      }
+     ]
+    },
+    "turok": {
+     "points": 55,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 5
+      }
+     ]
+    },
+    "smash": {
+     "points": 77.5,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 1
+      },
+      {
+       "label": "Kills",
+       "v": 3
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 13.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 8
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 79.58,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 9550
+      }
+     ]
+    },
+    "beer-pong": {
+     "points": 60,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 3
+      },
+      {
+       "label": "Cups Hit",
+       "v": 5
+      }
+     ]
+    },
+    "jp-evolution": {
+     "points": 105,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 1
+      },
+      {
+       "label": "Kills",
+       "v": 7
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Chris",
+   "year": 2025,
+   "total": 630.73,
+   "results": {
+    "40-yard-dash": {
+     "points": 56.67,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 6.05
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 43.67,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 38.1
+      }
+     ]
+    },
+    "football-accuracy": {
+     "points": 10,
+     "stats": [
+      {
+       "label": "Targets Hit",
+       "v": 1
+      }
+     ]
+    },
+    "ep-iii-rots": {
+     "points": 73.5,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 2
+      }
+     ]
+    },
+    "atv-offroad-fury": {
+     "points": 71.73,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 3.5
+      },
+      {
+       "label": "Time",
+       "v": {
+        "t": 139,
+        "d": "2:19"
+       }
+      }
+     ]
+    },
+    "turok": {
+     "points": 56,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 6
+      }
+     ]
+    },
+    "smash": {
+     "points": 45,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 6
+      },
+      {
+       "label": "Kills",
+       "v": 2
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 68.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 41
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 73.83,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 8860
+      }
+     ]
+    },
+    "beer-pong": {
+     "points": 70,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 2
+      },
+      {
+       "label": "Cups Hit",
+       "v": 5
+      }
+     ]
+    },
+    "jp-evolution": {
+     "points": 62,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 4
+      },
+      {
+       "label": "Kills",
+       "v": 2
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Miles",
+   "year": 2025,
+   "total": 627.04,
+   "results": {
+    "40-yard-dash": {
+     "points": 46.67,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 6.35
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 43.33,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 38
+      }
+     ]
+    },
+    "football-accuracy": {
+     "points": 40,
+     "stats": [
+      {
+       "label": "Targets Hit",
+       "v": 4
+      }
+     ]
+    },
+    "ep-iii-rots": {
+     "points": 40,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 6
+      },
+      {
+       "label": "Kills",
+       "v": 0
+      }
+     ]
+    },
+    "atv-offroad-fury": {
+     "points": 74.54,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 2
+      },
+      {
+       "label": "Time",
+       "v": {
+        "t": 149,
+        "d": "2:29"
+       }
+      }
+     ]
+    },
+    "turok": {
+     "points": 57,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 7
+      }
+     ]
+    },
+    "smash": {
+     "points": 65.5,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 3
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 63.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 38
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 57.67,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 6920
+      }
+     ]
+    },
+    "beer-pong": {
+     "points": 76,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 1
+      },
+      {
+       "label": "Cups Hit",
+       "v": 4
+      }
+     ]
+    },
+    "jp-evolution": {
+     "points": 63,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Kjar",
+   "year": 2025,
+   "total": 559.91,
+   "results": {
+    "40-yard-dash": {
+     "points": 63,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.86
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 16.67,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 30
+      }
+     ]
+    },
+    "football-accuracy": {
+     "points": 20,
+     "stats": [
+      {
+       "label": "Targets Hit",
+       "v": 2
+      }
+     ]
+    },
+    "ep-iii-rots": {
+     "points": 54,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 4
+      },
+      {
+       "label": "Kills",
+       "v": 0
+      }
+     ]
+    },
+    "atv-offroad-fury": {
+     "points": 42.08,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 4
+      },
+      {
+       "label": "Time",
+       "v": {
+        "t": 173,
+        "d": "2:53"
+       }
+      }
+     ]
+    },
+    "turok": {
+     "points": 60,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 3
+      },
+      {
+       "label": "Kills",
+       "v": 10
+      }
+     ]
+    },
+    "smash": {
+     "points": 54.5,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 4
+      },
+      {
+       "label": "Kills",
+       "v": 1
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 86.67,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 52
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 53,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 6360
+      }
+     ]
+    },
+    "beer-pong": {
+     "points": 70,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 2
+      },
+      {
+       "label": "Cups Hit",
+       "v": 5
+      }
+     ]
+    },
+    "jp-evolution": {
+     "points": 40,
+     "stats": [
+      {
+       "label": "Placement",
+       "v": 6
+      },
+      {
+       "label": "Kills",
+       "v": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Miles",
+   "year": 2026,
+   "total": 1254.74,
+   "results": {
+    "beers-drank": {
+     "points": 120,
+     "stats": [
+      {
+       "label": "Beers",
+       "v": 12
+      },
+      {
+       "label": "Floor Piss",
+       "v": "No"
+      }
+     ]
+    },
+    "40-yard-dash": {
+     "points": 33,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 6.31
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 43.33,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 38
+      }
+     ]
+    },
+    "mile-run": {
+     "points": 29.38,
+     "stats": [
+      {
+       "label": "Time",
+       "v": {
+        "t": 699,
+        "d": "11:39"
+       }
+      }
+     ]
+    },
+    "free-throws": {
+     "points": 28.57,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 2
+      }
+     ]
+    },
+    "3-point-contest": {
+     "points": 12.5,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 2
+      }
+     ]
+    },
+    "turok": {
+     "points": 82,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 2
+      },
+      {
+       "label": "Kills",
+       "v": 24
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 48.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 29
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 49.26,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 5000
+      }
+     ]
+    },
+    "college-football": {
+     "points": 35.95,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 4478
+      },
+      {
+       "label": "TDs",
+       "v": 43
+      },
+      {
+       "label": "Int",
+       "v": 4
+      },
+      {
+       "label": "Wins",
+       "v": 1
+      },
+      {
+       "label": "Bonus",
+       "v": 0
+      }
+     ]
+    },
+    "nascar-thunder-2004": {
+     "points": 42,
+     "stats": [
+      {
+       "label": "DNFs",
+       "v": 14
+      }
+     ]
+    },
+    "sw-bombad-racing": {
+     "points": 37.11,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 3
+      },
+      {
+       "label": "Best Time",
+       "v": {
+        "t": 268,
+        "d": "4:28"
+       }
+      }
+     ]
+    },
+    "wwe-smackdown-vs-raw-2007": {
+     "points": 35,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 4
+      },
+      {
+       "label": "KOs",
+       "v": 0
+      }
+     ]
+    },
+    "yu-gi-oh": {
+     "points": 8.1,
+     "stats": [
+      {
+       "label": "Value",
+       "v": 2.7
+      }
+     ]
+    },
+    "gta-guesser": {
+     "points": 42.06,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 13411
+      }
+     ]
+    },
+    "skyrim-guesser": {
+     "points": 64.3,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 17859
+      }
+     ]
+    },
+    "jp-evolution-bets": {
+     "points": 543.86,
+     "stats": [
+      {
+       "label": "Bets Won",
+       "v": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Carter",
+   "year": 2026,
+   "total": 1080.1,
+   "results": {
+    "beers-drank": {
+     "points": 130,
+     "stats": [
+      {
+       "label": "Beers",
+       "v": 13
+      },
+      {
+       "label": "Floor Piss",
+       "v": "No"
+      }
+     ]
+    },
+    "40-yard-dash": {
+     "points": 83.5,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.3
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 66.67,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 45
+      }
+     ]
+    },
+    "mile-run": {
+     "points": 62.29,
+     "stats": [
+      {
+       "label": "Time",
+       "v": {
+        "t": 541,
+        "d": "9:01"
+       }
+      }
+     ]
+    },
+    "free-throws": {
+     "points": 57.14,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 4
+      }
+     ]
+    },
+    "3-point-contest": {
+     "points": 50,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 8
+      }
+     ]
+    },
+    "turok": {
+     "points": 56,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 2.5
+      },
+      {
+       "label": "Kills",
+       "v": 15
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 71.67,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 43
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 87.68,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 8900
+      }
+     ]
+    },
+    "college-football": {
+     "points": 55.54,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 3237
+      },
+      {
+       "label": "TDs",
+       "v": 37
+      },
+      {
+       "label": "Int",
+       "v": 3
+      },
+      {
+       "label": "Wins",
+       "v": 6
+      },
+      {
+       "label": "Bonus",
+       "v": 10
+      }
+     ]
+    },
+    "nascar-thunder-2004": {
+     "points": 96,
+     "stats": [
+      {
+       "label": "DNFs",
+       "v": 32
+      }
+     ]
+    },
+    "sw-bombad-racing": {
+     "points": 75.22,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 2
+      },
+      {
+       "label": "Best Time",
+       "v": {
+        "t": 212,
+        "d": "3:32"
+       }
+      }
+     ]
+    },
+    "wwe-smackdown-vs-raw-2007": {
+     "points": 15,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 6
+      },
+      {
+       "label": "KOs",
+       "v": 0
+      }
+     ]
+    },
+    "yu-gi-oh": {
+     "points": 16.17,
+     "stats": [
+      {
+       "label": "Value",
+       "v": 5.39
+      }
+     ]
+    },
+    "gta-guesser": {
+     "points": 98.2,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 24640
+      }
+     ]
+    },
+    "skyrim-guesser": {
+     "points": 54.02,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 15804
+      }
+     ]
+    },
+    "jp-evolution-bets": {
+     "points": 5,
+     "stats": [
+      {
+       "label": "Bets Won",
+       "v": 1
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Chris",
+   "year": 2026,
+   "total": 957.33,
+   "results": {
+    "beers-drank": {
+     "points": 150,
+     "stats": [
+      {
+       "label": "Beers",
+       "v": 15
+      },
+      {
+       "label": "Floor Piss",
+       "v": "No"
+      }
+     ]
+    },
+    "40-yard-dash": {
+     "points": 77,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.43
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 45,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 38.5
+      }
+     ]
+    },
+    "mile-run": {
+     "points": 82.5,
+     "stats": [
+      {
+       "label": "Time",
+       "v": {
+        "t": 444,
+        "d": "7:24"
+       }
+      }
+     ]
+    },
+    "free-throws": {
+     "points": 42.86,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 3
+      }
+     ]
+    },
+    "3-point-contest": {
+     "points": 25,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 4
+      }
+     ]
+    },
+    "turok": {
+     "points": 56,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 2.5
+      },
+      {
+       "label": "Kills",
+       "v": 15
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 71.67,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 43
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 55.27,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 5610
+      }
+     ]
+    },
+    "college-football": {
+     "points": 36.21,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 3638
+      },
+      {
+       "label": "TDs",
+       "v": 33
+      },
+      {
+       "label": "Int",
+       "v": 3
+      },
+      {
+       "label": "Wins",
+       "v": 4
+      },
+      {
+       "label": "Bonus",
+       "v": 0
+      }
+     ]
+    },
+    "nascar-thunder-2004": {
+     "points": 72,
+     "stats": [
+      {
+       "label": "DNFs",
+       "v": 24
+      }
+     ]
+    },
+    "sw-bombad-racing": {
+     "points": 48.06,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 4
+      },
+      {
+       "label": "Best Time",
+       "v": {
+        "t": 242,
+        "d": "4:02"
+       }
+      }
+     ]
+    },
+    "wwe-smackdown-vs-raw-2007": {
+     "points": 25,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 5
+      },
+      {
+       "label": "KOs",
+       "v": 0
+      }
+     ]
+    },
+    "yu-gi-oh": {
+     "points": 100,
+     "stats": [
+      {
+       "label": "Value",
+       "v": 45
+      }
+     ]
+    },
+    "gta-guesser": {
+     "points": 67.22,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 18444
+      }
+     ]
+    },
+    "skyrim-guesser": {
+     "points": 13.55,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 7710
+      }
+     ]
+    },
+    "jp-evolution-bets": {
+     "points": -10,
+     "stats": [
+      {
+       "label": "Bets Won",
+       "v": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Kyle",
+   "year": 2026,
+   "total": 842.57,
+   "results": {
+    "beers-drank": {
+     "points": 110,
+     "stats": [
+      {
+       "label": "Beers",
+       "v": 11
+      },
+      {
+       "label": "Floor Piss",
+       "v": "No"
+      }
+     ]
+    },
+    "40-yard-dash": {
+     "points": 95.5,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.06
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 45.83,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 38.75
+      }
+     ]
+    },
+    "mile-run": {
+     "points": 83.54,
+     "stats": [
+      {
+       "label": "Time",
+       "v": {
+        "t": 439,
+        "d": "7:19"
+       }
+      }
+     ]
+    },
+    "free-throws": {
+     "points": 71.43,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 5
+      }
+     ]
+    },
+    "3-point-contest": {
+     "points": 43.75,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 7
+      }
+     ]
+    },
+    "turok": {
+     "points": 20,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 4
+      },
+      {
+       "label": "Kills",
+       "v": 9
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 48.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 29
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 100,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 10150
+      }
+     ]
+    },
+    "college-football": {
+     "points": 43.54,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 3987
+      },
+      {
+       "label": "TDs",
+       "v": 40
+      },
+      {
+       "label": "Int",
+       "v": 4
+      },
+      {
+       "label": "Wins",
+       "v": 4
+      },
+      {
+       "label": "Bonus",
+       "v": 0
+      }
+     ]
+    },
+    "nascar-thunder-2004": {
+     "points": 78,
+     "stats": [
+      {
+       "label": "DNFs",
+       "v": 26
+      }
+     ]
+    },
+    "sw-bombad-racing": {
+     "points": 61.5,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 2
+      },
+      {
+       "label": "Best Time",
+       "v": {
+        "t": 243,
+        "d": "4:03"
+       }
+      }
+     ]
+    },
+    "wwe-smackdown-vs-raw-2007": {
+     "points": 95,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 1
+      },
+      {
+       "label": "KOs",
+       "v": 3
+      }
+     ]
+    },
+    "yu-gi-oh": {
+     "points": 9,
+     "stats": [
+      {
+       "label": "Value",
+       "v": 3
+      }
+     ]
+    },
+    "gta-guesser": {
+     "points": 47.38,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 14476
+      }
+     ]
+    },
+    "skyrim-guesser": {
+     "points": -9.23,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 3153
+      }
+     ]
+    },
+    "jp-evolution-bets": {
+     "points": -101,
+     "stats": [
+      {
+       "label": "Bets Won",
+       "v": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Kjar",
+   "year": 2026,
+   "total": 679.42,
+   "results": {
+    "beers-drank": {
+     "points": 220,
+     "stats": [
+      {
+       "label": "Beers",
+       "v": 22
+      },
+      {
+       "label": "Floor Piss",
+       "v": "No"
+      }
+     ]
+    },
+    "40-yard-dash": {
+     "points": 54.5,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 5.88
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 30,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 34
+      }
+     ]
+    },
+    "mile-run": {
+     "points": 47.71,
+     "stats": [
+      {
+       "label": "Time",
+       "v": {
+        "t": 611,
+        "d": "10:11"
+       }
+      }
+     ]
+    },
+    "free-throws": {
+     "points": 14.29,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 1
+      }
+     ]
+    },
+    "3-point-contest": {
+     "points": 0,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 0
+      }
+     ]
+    },
+    "turok": {
+     "points": 52,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 2.5
+      },
+      {
+       "label": "Kills",
+       "v": 13
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 43.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 26
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 81.58,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 8280
+      }
+     ]
+    },
+    "college-football": {
+     "points": 51.85,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 4618
+      },
+      {
+       "label": "TDs",
+       "v": 46
+      },
+      {
+       "label": "Int",
+       "v": 3
+      },
+      {
+       "label": "Wins",
+       "v": 3
+      },
+      {
+       "label": "Bonus",
+       "v": 0
+      }
+     ]
+    },
+    "nascar-thunder-2004": {
+     "points": 57,
+     "stats": [
+      {
+       "label": "DNFs",
+       "v": 19
+      }
+     ]
+    },
+    "sw-bombad-racing": {
+     "points": 39.56,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 4
+      },
+      {
+       "label": "Best Time",
+       "v": {
+        "t": 251,
+        "d": "4:11"
+       }
+      }
+     ]
+    },
+    "wwe-smackdown-vs-raw-2007": {
+     "points": 55,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 3
+      },
+      {
+       "label": "KOs",
+       "v": 1
+      }
+     ]
+    },
+    "yu-gi-oh": {
+     "points": 15,
+     "stats": [
+      {
+       "label": "Value",
+       "v": 5
+      }
+     ]
+    },
+    "gta-guesser": {
+     "points": 58.27,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 16654
+      }
+     ]
+    },
+    "skyrim-guesser": {
+     "points": 19.34,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 8868
+      }
+     ]
+    },
+    "jp-evolution-bets": {
+     "points": -160,
+     "stats": [
+      {
+       "label": "Bets Won",
+       "v": 0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "player": "Nick",
+   "year": 2026,
+   "total": 0.41,
+   "results": {
+    "beers-drank": {
+     "points": 140,
+     "stats": [
+      {
+       "label": "Beers",
+       "v": 14
+      },
+      {
+       "label": "Floor Piss",
+       "v": "No"
+      }
+     ]
+    },
+    "40-yard-dash": {
+     "points": 48.5,
+     "stats": [
+      {
+       "label": "Seconds",
+       "v": 6
+      }
+     ]
+    },
+    "sling-pigskin": {
+     "points": 56.67,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 42
+      }
+     ]
+    },
+    "mile-run": {
+     "points": 53.75,
+     "stats": [
+      {
+       "label": "Time",
+       "v": {
+        "t": 582,
+        "d": "9:42"
+       }
+      }
+     ]
+    },
+    "free-throws": {
+     "points": 57.14,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 4
+      }
+     ]
+    },
+    "3-point-contest": {
+     "points": 62.5,
+     "stats": [
+      {
+       "label": "Makes",
+       "v": 10
+      }
+     ]
+    },
+    "turok": {
+     "points": 96,
+     "stats": [
+      {
+       "label": "Avg Plmt",
+       "v": 1.5
+      },
+      {
+       "label": "Kills",
+       "v": 27
+      }
+     ]
+    },
+    "mario-kart": {
+     "points": 63.33,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 38
+      }
+     ]
+    },
+    "quiplash": {
+     "points": 81.87,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 8310
+      }
+     ]
+    },
+    "college-football": {
+     "points": 29.98,
+     "stats": [
+      {
+       "label": "Yards",
+       "v": 3615
+      },
+      {
+       "label": "TDs",
+       "v": 33
+      },
+      {
+       "label": "Int",
+       "v": 1
+      },
+      {
+       "label": "Wins",
+       "v": 2
+      },
+      {
+       "label": "Bonus",
+       "v": 0
+      }
+     ]
+    },
+    "nascar-thunder-2004": {
+     "points": 75,
+     "stats": [
+      {
+       "label": "DNFs",
+       "v": 25
+      }
+     ]
+    },
+    "sw-bombad-racing": {
+     "points": 87.78,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 1
+      },
+      {
+       "label": "Best Time",
+       "v": {
+        "t": 202,
+        "d": "3:22"
+       }
+      }
+     ]
+    },
+    "wwe-smackdown-vs-raw-2007": {
+     "points": 75,
+     "stats": [
+      {
+       "label": "Avg Finish",
+       "v": 2
+      },
+      {
+       "label": "KOs",
+       "v": 2
+      }
+     ]
+    },
+    "yu-gi-oh": {
+     "points": 24,
+     "stats": [
+      {
+       "label": "Value",
+       "v": 8
+      }
+     ]
+    },
+    "gta-guesser": {
+     "points": 36.74,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 12348
+      }
+     ]
+    },
+    "skyrim-guesser": {
+     "points": 8.14,
+     "stats": [
+      {
+       "label": "Score",
+       "v": 6628
+      }
+     ]
+    },
+    "jp-evolution-bets": {
+     "points": -996,
+     "stats": [
+      {
+       "label": "Bets Won",
+       "v": 0
+      }
+     ]
+    }
+   }
+  }
+ ],
+ "byYear": {
+  "2025": {
+   "standings": [
+    {
+     "player": "Nick",
+     "total": 778.8,
+     "rank": 1
+    },
+    {
+     "player": "Carter",
+     "total": 721.58,
+     "rank": 2
+    },
+    {
+     "player": "Kyle",
+     "total": 675.94,
+     "rank": 3
+    },
+    {
+     "player": "Chris",
+     "total": 630.73,
+     "rank": 4
+    },
+    {
+     "player": "Miles",
+     "total": 627.04,
+     "rank": 5
+    },
+    {
+     "player": "Kjar",
+     "total": 559.91,
+     "rank": 6
+    }
+   ],
+   "events": [
+    {
+     "slug": "40-yard-dash",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 79.67,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.36
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 65.33,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.79
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kjar",
+       "points": 63,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.86
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 56.67,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 6.05
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Nick",
+       "points": 54.33,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 6.12
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 46.67,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 6.35
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "sling-pigskin",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 48.33,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 39.5
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 46.67,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 39
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Chris",
+       "points": 43.67,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 38.1
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Miles",
+       "points": 43.33,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 38
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kyle",
+       "points": 33.33,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 35
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kjar",
+       "points": 16.67,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 30
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "football-accuracy",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 70,
+       "stats": [
+        {
+         "label": "Targets Hit",
+         "v": 7
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 50,
+       "stats": [
+        {
+         "label": "Targets Hit",
+         "v": 5
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Miles",
+       "points": 40,
+       "stats": [
+        {
+         "label": "Targets Hit",
+         "v": 4
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Carter",
+       "points": 30,
+       "stats": [
+        {
+         "label": "Targets Hit",
+         "v": 3
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 20,
+       "stats": [
+        {
+         "label": "Targets Hit",
+         "v": 2
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Chris",
+       "points": 10,
+       "stats": [
+        {
+         "label": "Targets Hit",
+         "v": 1
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "ep-iii-rots",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 100,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 1
+        },
+        {
+         "label": "Kills",
+         "v": 4
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 80.5,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 2
+        },
+        {
+         "label": "Kills",
+         "v": 2
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Chris",
+       "points": 73.5,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 2
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kyle",
+       "points": 65.75,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 5
+        },
+        {
+         "label": "Kills",
+         "v": 3
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 54,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 4
+        },
+        {
+         "label": "Kills",
+         "v": 0
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 40,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 6
+        },
+        {
+         "label": "Kills",
+         "v": 0
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "atv-offroad-fury",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 95.38,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 1
+        },
+        {
+         "label": "Time",
+         "v": {
+          "t": 131,
+          "d": "2:11"
+         }
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 89.58,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 1.5
+        },
+        {
+         "label": "Time",
+         "v": {
+          "t": 134,
+          "d": "2:14"
+         }
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Miles",
+       "points": 74.54,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 2
+        },
+        {
+         "label": "Time",
+         "v": {
+          "t": 149,
+          "d": "2:29"
+         }
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 71.73,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 3.5
+        },
+        {
+         "label": "Time",
+         "v": {
+          "t": 139,
+          "d": "2:19"
+         }
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 42.08,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 4
+        },
+        {
+         "label": "Time",
+         "v": {
+          "t": 173,
+          "d": "2:53"
+         }
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kyle",
+       "points": 36.77,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 3
+        },
+        {
+         "label": "Time",
+         "v": {
+          "t": 189,
+          "d": "3:09"
+         }
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "turok",
+     "board": [
+      {
+       "player": "Carter",
+       "points": 90,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 1
+        },
+        {
+         "label": "Kills",
+         "v": 20
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 87,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 1.5
+        },
+        {
+         "label": "Kills",
+         "v": 22
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kjar",
+       "points": 60,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 10
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Miles",
+       "points": 57,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 7
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Chris",
+       "points": 56,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 6
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kyle",
+       "points": 55,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 5
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "smash",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 77.5,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 1
+        },
+        {
+         "label": "Kills",
+         "v": 3
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 69,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 2
+        },
+        {
+         "label": "Kills",
+         "v": 2
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Miles",
+       "points": 65.5,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 3
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kjar",
+       "points": 54.5,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 4
+        },
+        {
+         "label": "Kills",
+         "v": 1
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Nick",
+       "points": 53.5,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 5
+        },
+        {
+         "label": "Kills",
+         "v": 3
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Chris",
+       "points": 45,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 6
+        },
+        {
+         "label": "Kills",
+         "v": 2
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "mario-kart",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 86.67,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 52
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Kjar",
+       "points": 86.67,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 52
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 85,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 51
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 68.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 41
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 63.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 38
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kyle",
+       "points": 13.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 8
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "quiplash",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 79.58,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 9550
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Chris",
+       "points": 73.83,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 8860
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Carter",
+       "points": 63.5,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 7620
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Miles",
+       "points": 57.67,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 6920
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Nick",
+       "points": 55.58,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 6670
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kjar",
+       "points": 53,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 6360
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "beer-pong",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 84,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 1
+        },
+        {
+         "label": "Cups Hit",
+         "v": 6
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Miles",
+       "points": 76,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 1
+        },
+        {
+         "label": "Cups Hit",
+         "v": 4
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Chris",
+       "points": 70,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 2
+        },
+        {
+         "label": "Cups Hit",
+         "v": 5
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kjar",
+       "points": 70,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 2
+        },
+        {
+         "label": "Cups Hit",
+         "v": 5
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kyle",
+       "points": 60,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 3
+        },
+        {
+         "label": "Cups Hit",
+         "v": 5
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Carter",
+       "points": 56,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 3
+        },
+        {
+         "label": "Cups Hit",
+         "v": 4
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "jp-evolution",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 105,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 1
+        },
+        {
+         "label": "Kills",
+         "v": 7
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 64,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 2
+        },
+        {
+         "label": "Kills",
+         "v": 0
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Miles",
+       "points": 63,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 3
+        },
+        {
+         "label": "Kills",
+         "v": 1
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 62,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 4
+        },
+        {
+         "label": "Kills",
+         "v": 2
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Carter",
+       "points": 46,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 5
+        },
+        {
+         "label": "Kills",
+         "v": 0
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kjar",
+       "points": 40,
+       "stats": [
+        {
+         "label": "Placement",
+         "v": 6
+        },
+        {
+         "label": "Kills",
+         "v": 0
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    }
+   ]
+  },
+  "2026": {
+   "standings": [
+    {
+     "player": "Miles",
+     "total": 1254.74,
+     "rank": 1
+    },
+    {
+     "player": "Carter",
+     "total": 1080.1,
+     "rank": 2
+    },
+    {
+     "player": "Chris",
+     "total": 957.33,
+     "rank": 3
+    },
+    {
+     "player": "Kyle",
+     "total": 842.57,
+     "rank": 4
+    },
+    {
+     "player": "Kjar",
+     "total": 679.42,
+     "rank": 5
+    },
+    {
+     "player": "Nick",
+     "total": 0.41,
+     "rank": 6
+    }
+   ],
+   "events": [
+    {
+     "slug": "beers-drank",
+     "board": [
+      {
+       "player": "Kjar",
+       "points": 220,
+       "stats": [
+        {
+         "label": "Beers",
+         "v": 22
+        },
+        {
+         "label": "Floor Piss",
+         "v": "No"
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Chris",
+       "points": 150,
+       "stats": [
+        {
+         "label": "Beers",
+         "v": 15
+        },
+        {
+         "label": "Floor Piss",
+         "v": "No"
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Nick",
+       "points": 140,
+       "stats": [
+        {
+         "label": "Beers",
+         "v": 14
+        },
+        {
+         "label": "Floor Piss",
+         "v": "No"
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Carter",
+       "points": 130,
+       "stats": [
+        {
+         "label": "Beers",
+         "v": 13
+        },
+        {
+         "label": "Floor Piss",
+         "v": "No"
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 120,
+       "stats": [
+        {
+         "label": "Beers",
+         "v": 12
+        },
+        {
+         "label": "Floor Piss",
+         "v": "No"
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kyle",
+       "points": 110,
+       "stats": [
+        {
+         "label": "Beers",
+         "v": 11
+        },
+        {
+         "label": "Floor Piss",
+         "v": "No"
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "40-yard-dash",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 95.5,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.06
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 83.5,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.3
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Chris",
+       "points": 77,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.43
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kjar",
+       "points": 54.5,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 5.88
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Nick",
+       "points": 48.5,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 6
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 33,
+       "stats": [
+        {
+         "label": "Seconds",
+         "v": 6.31
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "sling-pigskin",
+     "board": [
+      {
+       "player": "Carter",
+       "points": 66.67,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 45
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 56.67,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 42
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kyle",
+       "points": 45.83,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 38.75
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 45,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 38.5
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 43.33,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 38
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kjar",
+       "points": 30,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 34
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "mile-run",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 83.54,
+       "stats": [
+        {
+         "label": "Time",
+         "v": {
+          "t": 439,
+          "d": "7:19"
+         }
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Chris",
+       "points": 82.5,
+       "stats": [
+        {
+         "label": "Time",
+         "v": {
+          "t": 444,
+          "d": "7:24"
+         }
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Carter",
+       "points": 62.29,
+       "stats": [
+        {
+         "label": "Time",
+         "v": {
+          "t": 541,
+          "d": "9:01"
+         }
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Nick",
+       "points": 53.75,
+       "stats": [
+        {
+         "label": "Time",
+         "v": {
+          "t": 582,
+          "d": "9:42"
+         }
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 47.71,
+       "stats": [
+        {
+         "label": "Time",
+         "v": {
+          "t": 611,
+          "d": "10:11"
+         }
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 29.38,
+       "stats": [
+        {
+         "label": "Time",
+         "v": {
+          "t": 699,
+          "d": "11:39"
+         }
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "free-throws",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 71.43,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 5
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 57.14,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 4
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Nick",
+       "points": 57.14,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 4
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Chris",
+       "points": 42.86,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 3
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 28.57,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 2
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kjar",
+       "points": 14.29,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 1
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "3-point-contest",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 62.5,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 10
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 50,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 8
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kyle",
+       "points": 43.75,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 7
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 25,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 4
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 12.5,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 2
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kjar",
+       "points": 0,
+       "stats": [
+        {
+         "label": "Makes",
+         "v": 0
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "turok",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 96,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 1.5
+        },
+        {
+         "label": "Kills",
+         "v": 27
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Miles",
+       "points": 82,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 2
+        },
+        {
+         "label": "Kills",
+         "v": 24
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Carter",
+       "points": 56,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 2.5
+        },
+        {
+         "label": "Kills",
+         "v": 15
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 56,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 2.5
+        },
+        {
+         "label": "Kills",
+         "v": 15
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kjar",
+       "points": 52,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 2.5
+        },
+        {
+         "label": "Kills",
+         "v": 13
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kyle",
+       "points": 20,
+       "stats": [
+        {
+         "label": "Avg Plmt",
+         "v": 4
+        },
+        {
+         "label": "Kills",
+         "v": 9
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "mario-kart",
+     "board": [
+      {
+       "player": "Carter",
+       "points": 71.67,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 43
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Chris",
+       "points": 71.67,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 43
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 63.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 38
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Miles",
+       "points": 48.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 29
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kyle",
+       "points": 48.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 29
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 43.33,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 26
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "quiplash",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 100,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 10150
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 87.68,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 8900
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Nick",
+       "points": 81.87,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 8310
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kjar",
+       "points": 81.58,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 8280
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Chris",
+       "points": 55.27,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 5610
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 49.26,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 5000
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "college-football",
+     "board": [
+      {
+       "player": "Carter",
+       "points": 55.54,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 3237
+        },
+        {
+         "label": "TDs",
+         "v": 37
+        },
+        {
+         "label": "Int",
+         "v": 3
+        },
+        {
+         "label": "Wins",
+         "v": 6
+        },
+        {
+         "label": "Bonus",
+         "v": 10
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Kjar",
+       "points": 51.85,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 4618
+        },
+        {
+         "label": "TDs",
+         "v": 46
+        },
+        {
+         "label": "Int",
+         "v": 3
+        },
+        {
+         "label": "Wins",
+         "v": 3
+        },
+        {
+         "label": "Bonus",
+         "v": 0
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kyle",
+       "points": 43.54,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 3987
+        },
+        {
+         "label": "TDs",
+         "v": 40
+        },
+        {
+         "label": "Int",
+         "v": 4
+        },
+        {
+         "label": "Wins",
+         "v": 4
+        },
+        {
+         "label": "Bonus",
+         "v": 0
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 36.21,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 3638
+        },
+        {
+         "label": "TDs",
+         "v": 33
+        },
+        {
+         "label": "Int",
+         "v": 3
+        },
+        {
+         "label": "Wins",
+         "v": 4
+        },
+        {
+         "label": "Bonus",
+         "v": 0
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 35.95,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 4478
+        },
+        {
+         "label": "TDs",
+         "v": 43
+        },
+        {
+         "label": "Int",
+         "v": 4
+        },
+        {
+         "label": "Wins",
+         "v": 1
+        },
+        {
+         "label": "Bonus",
+         "v": 0
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Nick",
+       "points": 29.98,
+       "stats": [
+        {
+         "label": "Yards",
+         "v": 3615
+        },
+        {
+         "label": "TDs",
+         "v": 33
+        },
+        {
+         "label": "Int",
+         "v": 1
+        },
+        {
+         "label": "Wins",
+         "v": 2
+        },
+        {
+         "label": "Bonus",
+         "v": 0
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "nascar-thunder-2004",
+     "board": [
+      {
+       "player": "Carter",
+       "points": 96,
+       "stats": [
+        {
+         "label": "DNFs",
+         "v": 32
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Kyle",
+       "points": 78,
+       "stats": [
+        {
+         "label": "DNFs",
+         "v": 26
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Nick",
+       "points": 75,
+       "stats": [
+        {
+         "label": "DNFs",
+         "v": 25
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 72,
+       "stats": [
+        {
+         "label": "DNFs",
+         "v": 24
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 57,
+       "stats": [
+        {
+         "label": "DNFs",
+         "v": 19
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 42,
+       "stats": [
+        {
+         "label": "DNFs",
+         "v": 14
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "sw-bombad-racing",
+     "board": [
+      {
+       "player": "Nick",
+       "points": 87.78,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 1
+        },
+        {
+         "label": "Best Time",
+         "v": {
+          "t": 202,
+          "d": "3:22"
+         }
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 75.22,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 2
+        },
+        {
+         "label": "Best Time",
+         "v": {
+          "t": 212,
+          "d": "3:32"
+         }
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kyle",
+       "points": 61.5,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 2
+        },
+        {
+         "label": "Best Time",
+         "v": {
+          "t": 243,
+          "d": "4:03"
+         }
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 48.06,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 4
+        },
+        {
+         "label": "Best Time",
+         "v": {
+          "t": 242,
+          "d": "4:02"
+         }
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": 39.56,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 4
+        },
+        {
+         "label": "Best Time",
+         "v": {
+          "t": 251,
+          "d": "4:11"
+         }
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 37.11,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 3
+        },
+        {
+         "label": "Best Time",
+         "v": {
+          "t": 268,
+          "d": "4:28"
+         }
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "wwe-smackdown-vs-raw-2007",
+     "board": [
+      {
+       "player": "Kyle",
+       "points": 95,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 1
+        },
+        {
+         "label": "KOs",
+         "v": 3
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 75,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 2
+        },
+        {
+         "label": "KOs",
+         "v": 2
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kjar",
+       "points": 55,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 3
+        },
+        {
+         "label": "KOs",
+         "v": 1
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Miles",
+       "points": 35,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 4
+        },
+        {
+         "label": "KOs",
+         "v": 0
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Chris",
+       "points": 25,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 5
+        },
+        {
+         "label": "KOs",
+         "v": 0
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Carter",
+       "points": 15,
+       "stats": [
+        {
+         "label": "Avg Finish",
+         "v": 6
+        },
+        {
+         "label": "KOs",
+         "v": 0
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "yu-gi-oh",
+     "board": [
+      {
+       "player": "Chris",
+       "points": 100,
+       "stats": [
+        {
+         "label": "Value",
+         "v": 45
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Nick",
+       "points": 24,
+       "stats": [
+        {
+         "label": "Value",
+         "v": 8
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Carter",
+       "points": 16.17,
+       "stats": [
+        {
+         "label": "Value",
+         "v": 5.39
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kjar",
+       "points": 15,
+       "stats": [
+        {
+         "label": "Value",
+         "v": 5
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kyle",
+       "points": 9,
+       "stats": [
+        {
+         "label": "Value",
+         "v": 3
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Miles",
+       "points": 8.1,
+       "stats": [
+        {
+         "label": "Value",
+         "v": 2.7
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "gta-guesser",
+     "board": [
+      {
+       "player": "Carter",
+       "points": 98.2,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 24640
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Chris",
+       "points": 67.22,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 18444
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kjar",
+       "points": 58.27,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 16654
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kyle",
+       "points": 47.38,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 14476
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Miles",
+       "points": 42.06,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 13411
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Nick",
+       "points": 36.74,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 12348
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "skyrim-guesser",
+     "board": [
+      {
+       "player": "Miles",
+       "points": 64.3,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 17859
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 54.02,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 15804
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Kjar",
+       "points": 19.34,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 8868
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Chris",
+       "points": 13.55,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 7710
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Nick",
+       "points": 8.14,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 6628
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Kyle",
+       "points": -9.23,
+       "stats": [
+        {
+         "label": "Score",
+         "v": 3153
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    },
+    {
+     "slug": "jp-evolution-bets",
+     "board": [
+      {
+       "player": "Miles",
+       "points": 543.86,
+       "stats": [
+        {
+         "label": "Bets Won",
+         "v": 1
+        }
+       ],
+       "rank": 1
+      },
+      {
+       "player": "Carter",
+       "points": 5,
+       "stats": [
+        {
+         "label": "Bets Won",
+         "v": 1
+        }
+       ],
+       "rank": 2
+      },
+      {
+       "player": "Chris",
+       "points": -10,
+       "stats": [
+        {
+         "label": "Bets Won",
+         "v": 0
+        }
+       ],
+       "rank": 3
+      },
+      {
+       "player": "Kyle",
+       "points": -101,
+       "stats": [
+        {
+         "label": "Bets Won",
+         "v": 0
+        }
+       ],
+       "rank": 4
+      },
+      {
+       "player": "Kjar",
+       "points": -160,
+       "stats": [
+        {
+         "label": "Bets Won",
+         "v": 0
+        }
+       ],
+       "rank": 5
+      },
+      {
+       "player": "Nick",
+       "points": -996,
+       "stats": [
+        {
+         "label": "Bets Won",
+         "v": 0
+        }
+       ],
+       "rank": 6
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "ratings": {
+  "events": [
+   {
+    "slug": "beers-drank",
+    "name": "Beers Drank",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "40-yard-dash",
+    "name": "40 Yard Dash",
+    "category": "Speed"
+   },
+   {
+    "slug": "sling-pigskin",
+    "name": "Sling Pigskin",
+    "category": "Strength"
+   },
+   {
+    "slug": "football-accuracy",
+    "name": "Football Accuracy",
+    "category": "Dexterity"
+   },
+   {
+    "slug": "mile-run",
+    "name": "Mile Run",
+    "category": "Speed"
+   },
+   {
+    "slug": "free-throws",
+    "name": "Free Throws",
+    "category": "Dexterity"
+   },
+   {
+    "slug": "3-point-contest",
+    "name": "3 Point Contest",
+    "category": "Dexterity"
+   },
+   {
+    "slug": "ep-iii-rots",
+    "name": "Ep III ROTS",
+    "category": "Gaming"
+   },
+   {
+    "slug": "atv-offroad-fury",
+    "name": "ATV Offroad Fury",
+    "category": "Driving"
+   },
+   {
+    "slug": "turok",
+    "name": "Turok",
+    "category": "Gaming"
+   },
+   {
+    "slug": "smash",
+    "name": "Smash",
+    "category": "Gaming"
+   },
+   {
+    "slug": "mario-kart",
+    "name": "Mario Kart",
+    "category": "Driving"
+   },
+   {
+    "slug": "quiplash",
+    "name": "Quiplash",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "beer-pong",
+    "name": "Beer Pong",
+    "category": "Dexterity"
+   },
+   {
+    "slug": "jp-evolution",
+    "name": "JP Evolution",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "college-football",
+    "name": "College Football",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "nascar-thunder-2004",
+    "name": "Nascar Thunder 2004",
+    "category": "Driving"
+   },
+   {
+    "slug": "sw-bombad-racing",
+    "name": "SW Bombad Racing",
+    "category": "Driving"
+   },
+   {
+    "slug": "wwe-smackdown-vs-raw-2007",
+    "name": "WWE Smackdown Vs Raw 2007",
+    "category": "Gaming"
+   },
+   {
+    "slug": "yu-gi-oh",
+    "name": "Yu-Gi-Oh",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "gta-guesser",
+    "name": "GTA Guesser",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "skyrim-guesser",
+    "name": "Skyrim Guesser",
+    "category": "Penis Size"
+   },
+   {
+    "slug": "jp-evolution-bets",
+    "name": "JP Evolution Bets",
+    "category": "Penis Size"
+   }
+  ],
+  "players": {
+   "Carter": {
+    "beers-drank": 78.5,
+    "40-yard-dash": 87.1,
+    "sling-pigskin": 84.3,
+    "football-accuracy": 78.5,
+    "mile-run": 82,
+    "free-throws": 82.8,
+    "3-point-contest": 84.6,
+    "ep-iii-rots": 87,
+    "atv-offroad-fury": 92.1,
+    "turok": 87.4,
+    "smash": 84.4,
+    "mario-kart": 87.2,
+    "quiplash": 84.3,
+    "beer-pong": 70.8,
+    "jp-evolution": 71.4,
+    "college-football": 85,
+    "nascar-thunder-2004": 96.8,
+    "sw-bombad-racing": 88.8,
+    "wwe-smackdown-vs-raw-2007": 69.4,
+    "yu-gi-oh": 80.1,
+    "gta-guesser": 98.7,
+    "skyrim-guesser": 88.6,
+    "jp-evolution-bets": 41
+   },
+   "Chris": {
+    "beers-drank": 84.5,
+    "40-yard-dash": 83.4,
+    "sling-pigskin": 80,
+    "football-accuracy": 72.6,
+    "mile-run": 91.3,
+    "free-throws": 77.2,
+    "3-point-contest": 77.2,
+    "ep-iii-rots": 82.5,
+    "atv-offroad-fury": 79,
+    "turok": 79.8,
+    "smash": 72.7,
+    "mario-kart": 82.4,
+    "quiplash": 77.4,
+    "beer-pong": 80,
+    "jp-evolution": 79.7,
+    "college-football": 78.8,
+    "nascar-thunder-2004": 78.9,
+    "sw-bombad-racing": 77.1,
+    "wwe-smackdown-vs-raw-2007": 73,
+    "yu-gi-oh": 99,
+    "gta-guesser": 85.9,
+    "skyrim-guesser": 79.3,
+    "jp-evolution-bets": 38
+   },
+   "Kjar": {
+    "beers-drank": 99,
+    "40-yard-dash": 79.5,
+    "sling-pigskin": 72.7,
+    "football-accuracy": 75.5,
+    "mile-run": 75.2,
+    "free-throws": 66.2,
+    "3-point-contest": 69.9,
+    "ep-iii-rots": 69.9,
+    "atv-offroad-fury": 57.2,
+    "turok": 79.8,
+    "smash": 77.3,
+    "mario-kart": 79.5,
+    "quiplash": 79.1,
+    "beer-pong": 80,
+    "jp-evolution": 68.3,
+    "college-football": 83.8,
+    "nascar-thunder-2004": 67.7,
+    "sw-bombad-racing": 73.5,
+    "wwe-smackdown-vs-raw-2007": 83.5,
+    "yu-gi-oh": 79.9,
+    "gta-guesser": 82.2,
+    "skyrim-guesser": 80.7,
+    "jp-evolution-bets": 8
+   },
+   "Kyle": {
+    "beers-drank": 72.6,
+    "40-yard-dash": 93.5,
+    "sling-pigskin": 78.3,
+    "football-accuracy": 90.4,
+    "mile-run": 91.8,
+    "free-throws": 88.3,
+    "3-point-contest": 82.8,
+    "ep-iii-rots": 77.5,
+    "atv-offroad-fury": 53.3,
+    "turok": 71.5,
+    "smash": 88.5,
+    "mario-kart": 60,
+    "quiplash": 93.2,
+    "beer-pong": 73.4,
+    "jp-evolution": 99,
+    "college-football": 81.2,
+    "nascar-thunder-2004": 83.4,
+    "sw-bombad-racing": 82.9,
+    "wwe-smackdown-vs-raw-2007": 97.6,
+    "yu-gi-oh": 78.5,
+    "gta-guesser": 77.8,
+    "skyrim-guesser": 74.1,
+    "jp-evolution-bets": 19.8
+   },
+   "Miles": {
+    "beers-drank": 75.5,
+    "40-yard-dash": 70.3,
+    "sling-pigskin": 79.7,
+    "football-accuracy": 81.5,
+    "mile-run": 66.7,
+    "free-throws": 71.7,
+    "3-point-contest": 73.6,
+    "ep-iii-rots": 60.8,
+    "atv-offroad-fury": 81,
+    "turok": 85.8,
+    "smash": 82.7,
+    "mario-kart": 74.3,
+    "quiplash": 70.5,
+    "beer-pong": 83.9,
+    "jp-evolution": 80.3,
+    "college-football": 78.7,
+    "nascar-thunder-2004": 56.5,
+    "sw-bombad-racing": 72.4,
+    "wwe-smackdown-vs-raw-2007": 76.5,
+    "yu-gi-oh": 78.3,
+    "gta-guesser": 75.6,
+    "skyrim-guesser": 91,
+    "jp-evolution-bets": 99
+   },
+   "Nick": {
+    "beers-drank": 81.5,
+    "40-yard-dash": 75.9,
+    "sling-pigskin": 82.8,
+    "football-accuracy": 84.5,
+    "mile-run": 78,
+    "free-throws": 82.8,
+    "3-point-contest": 88.3,
+    "ep-iii-rots": 99,
+    "atv-offroad-fury": 96.3,
+    "turok": 95.6,
+    "smash": 76.8,
+    "mario-kart": 85.3,
+    "quiplash": 80,
+    "beer-pong": 89.2,
+    "jp-evolution": 80.8,
+    "college-football": 76.8,
+    "nascar-thunder-2004": 81.1,
+    "sw-bombad-racing": 94.2,
+    "wwe-smackdown-vs-raw-2007": 90.6,
+    "yu-gi-oh": 81.9,
+    "gta-guesser": 73.4,
+    "skyrim-guesser": 78.1,
+    "jp-evolution-bets": 0
+   }
+  },
+  "average": 80,
+  "reference": {
+   "beers-drank": 80,
+   "40-yard-dash": 80,
+   "sling-pigskin": 80,
+   "football-accuracy": 80,
+   "mile-run": 80,
+   "free-throws": 80,
+   "3-point-contest": 80,
+   "ep-iii-rots": 80,
+   "atv-offroad-fury": 80,
+   "turok": 80,
+   "smash": 80,
+   "mario-kart": 80,
+   "quiplash": 80,
+   "beer-pong": 80,
+   "jp-evolution": 80,
+   "college-football": 80,
+   "nascar-thunder-2004": 80,
+   "sw-bombad-racing": 80,
+   "wwe-smackdown-vs-raw-2007": 80,
+   "yu-gi-oh": 80,
+   "gta-guesser": 80,
+   "skyrim-guesser": 80,
+   "jp-evolution-bets": 28.9
+  }
+ },
+ "overalls": {
+  "categories": [
+   "Speed",
+   "Strength",
+   "Dexterity",
+   "Gaming",
+   "Driving",
+   "Penis Size"
+  ],
+  "weights": {
+   "Speed": 0.1071428571,
+   "Strength": 0.07142857143,
+   "Dexterity": 0.1428571429,
+   "Gaming": 0.1785714286,
+   "Driving": 0.1785714286,
+   "Penis Size": 0.3214285714,
+   "Overall": 0.03571428571
+  },
+  "players": {
+   "Carter": {
+    "Speed": 85.4,
+    "Strength": 84.3,
+    "Dexterity": 79.2,
+    "Gaming": 83.1,
+    "Driving": 90.4,
+    "Penis Size": 79.1,
+    "Overall": 82.9
+   },
+   "Chris": {
+    "Speed": 86,
+    "Strength": 80,
+    "Dexterity": 76.8,
+    "Gaming": 77.5,
+    "Driving": 79.9,
+    "Penis Size": 77.8,
+    "Overall": 79
+   },
+   "Kjar": {
+    "Speed": 78.1,
+    "Strength": 72.7,
+    "Dexterity": 72.9,
+    "Gaming": 78.1,
+    "Driving": 71.5,
+    "Penis Size": 73.4,
+    "Overall": 74.3
+   },
+   "Kyle": {
+    "Speed": 92.9,
+    "Strength": 78.3,
+    "Dexterity": 83.7,
+    "Gaming": 81.3,
+    "Driving": 67.9,
+    "Penis Size": 76.6,
+    "Overall": 78.8
+   },
+   "Miles": {
+    "Speed": 69.1,
+    "Strength": 79.7,
+    "Dexterity": 77.7,
+    "Gaming": 78.3,
+    "Driving": 71.7,
+    "Penis Size": 79.9,
+    "Overall": 76.7
+   },
+   "Nick": {
+    "Speed": 76.6,
+    "Strength": 82.8,
+    "Dexterity": 86.2,
+    "Gaming": 91.5,
+    "Driving": 88.4,
+    "Penis Size": 70.3,
+    "Overall": 81.2
+   }
+  }
+ },
+ "cards": [
+  {
+   "name": "Carter",
+   "overall": 83,
+   "stats": {
+    "Speed": 85.4,
+    "Strength": 84.3,
+    "Dexterity": 79.2,
+    "Gaming": 83.1,
+    "Driving": 90.4,
+    "Penis Size": 79.1
+   },
+   "topEvents": [
+    "GTA Guesser",
+    "Nascar Thunder 2004",
+    "ATV Offroad Fury"
+   ]
+  },
+  {
+   "name": "Nick",
+   "overall": 81,
+   "stats": {
+    "Speed": 76.6,
+    "Strength": 82.8,
+    "Dexterity": 86.2,
+    "Gaming": 91.5,
+    "Driving": 88.4,
+    "Penis Size": 70.3
+   },
+   "topEvents": [
+    "Ep III ROTS",
+    "ATV Offroad Fury",
+    "Turok"
+   ]
+  },
+  {
+   "name": "Chris",
+   "overall": 79,
+   "stats": {
+    "Speed": 86,
+    "Strength": 80,
+    "Dexterity": 76.8,
+    "Gaming": 77.5,
+    "Driving": 79.9,
+    "Penis Size": 77.8
+   },
+   "topEvents": [
+    "Yu-Gi-Oh",
+    "Mile Run",
+    "GTA Guesser"
+   ]
+  },
+  {
+   "name": "Kyle",
+   "overall": 79,
+   "stats": {
+    "Speed": 92.9,
+    "Strength": 78.3,
+    "Dexterity": 83.7,
+    "Gaming": 81.3,
+    "Driving": 67.9,
+    "Penis Size": 76.6
+   },
+   "topEvents": [
+    "JP Evolution",
+    "WWE Smackdown Vs Raw 2007",
+    "40 Yard Dash"
+   ]
+  },
+  {
+   "name": "Miles",
+   "overall": 77,
+   "stats": {
+    "Speed": 69.1,
+    "Strength": 79.7,
+    "Dexterity": 77.7,
+    "Gaming": 78.3,
+    "Driving": 71.7,
+    "Penis Size": 79.9
+   },
+   "topEvents": [
+    "JP Evolution Bets",
+    "Skyrim Guesser",
+    "Turok"
+   ]
+  },
+  {
+   "name": "Kjar",
+   "overall": 74,
+   "stats": {
+    "Speed": 78.1,
+    "Strength": 72.7,
+    "Dexterity": 72.9,
+    "Gaming": 78.1,
+    "Driving": 71.5,
+    "Penis Size": 73.4
+   },
+   "topEvents": [
+    "Beers Drank",
+    "College Football",
+    "WWE Smackdown Vs Raw 2007"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,380 @@
+{
+ "logo": {
+  "large": "media/logo-900.webp",
+  "small": "media/logo-480.webp",
+  "og": "media/og.jpg"
+ },
+ "cards": {
+  "frame": "media/cards/frame.webp",
+  "back": "media/cards/back.webp",
+  "star": "media/cards/star.webp"
+ },
+ "players": {
+  "Carter": {
+   "src": "media/players/carter.webp",
+   "w": 552,
+   "h": 700
+  },
+  "Chris": {
+   "src": "media/players/chris.webp",
+   "w": 470,
+   "h": 582
+  },
+  "Eric": {
+   "src": "media/players/eric.webp",
+   "w": 249,
+   "h": 700
+  },
+  "Kjar": {
+   "src": "media/players/kjar.webp",
+   "w": 375,
+   "h": 600
+  },
+  "Kyle": {
+   "src": "media/players/kyle.webp",
+   "w": 360,
+   "h": 360
+  },
+  "Miles": {
+   "src": "media/players/miles.webp",
+   "w": 283,
+   "h": 700
+  },
+  "Nick": {
+   "src": "media/players/nick.webp",
+   "w": 361,
+   "h": 700
+  }
+ },
+ "events": [
+  {
+   "slug": "3-point-contest",
+   "name": "3 Point Contest",
+   "poster": "media/events/3-point-contest.webp",
+   "w": 781,
+   "h": 1200,
+   "tint": "#4c291a",
+   "event": "3-point-contest"
+  },
+  {
+   "slug": "40-yard-dash",
+   "name": "40 Yard Dash",
+   "poster": "media/events/40-yard-dash.webp",
+   "w": 365,
+   "h": 205,
+   "tint": "#264a1c",
+   "event": "40-yard-dash",
+   "video": "media/events/40-yard-dash.mp4"
+  },
+  {
+   "slug": "attack-of-the-twonkies",
+   "name": "Attack of the Twonkies",
+   "poster": "media/events/attack-of-the-twonkies.webp",
+   "w": 567,
+   "h": 878,
+   "tint": "#59260d",
+   "event": null
+  },
+  {
+   "slug": "atv-offroad-fury-2",
+   "name": "ATV Offroad Fury",
+   "poster": "media/events/atv-offroad-fury-2.webp",
+   "w": 257,
+   "h": 365,
+   "tint": "#59400d",
+   "event": "atv-offroad-fury"
+  },
+  {
+   "slug": "battlefront-ii",
+   "name": "Battlefront II",
+   "poster": "media/events/battlefront-ii.webp",
+   "w": 176,
+   "h": 281,
+   "tint": "#59470d",
+   "event": null
+  },
+  {
+   "slug": "beer-pong",
+   "name": "Beer Pong",
+   "poster": "media/events/beer-pong.webp",
+   "w": 586,
+   "h": 350,
+   "tint": "#590d11",
+   "event": "beer-pong"
+  },
+  {
+   "slug": "beers-drank",
+   "name": "Beers Drank",
+   "poster": "media/events/beers-drank.webp",
+   "w": 400,
+   "h": 240,
+   "tint": "#583f0e",
+   "event": "beers-drank",
+   "video": "media/events/beers-drank.mp4"
+  },
+  {
+   "slug": "beyblade-v-force",
+   "name": "Beyblade V-Force",
+   "poster": "media/events/beyblade-v-force.webp",
+   "w": 528,
+   "h": 808,
+   "tint": "#59260d",
+   "event": null
+  },
+  {
+   "slug": "cod-kills",
+   "name": "CoD Kills",
+   "poster": "media/events/cod-kills.webp",
+   "w": 1392,
+   "h": 1600,
+   "tint": "#4f2617",
+   "event": null
+  },
+  {
+   "slug": "college-football",
+   "name": "College Football",
+   "poster": "media/events/college-football.webp",
+   "w": 399,
+   "h": 501,
+   "tint": "#57190f",
+   "event": "college-football"
+  },
+  {
+   "slug": "cornhole",
+   "name": "Cornhole",
+   "poster": "media/events/cornhole.webp",
+   "w": 200,
+   "h": 194,
+   "tint": "#0d4059",
+   "event": null,
+   "video": "media/events/cornhole.mp4"
+  },
+  {
+   "slug": "ep-iii-rots",
+   "name": "Ep III ROTS",
+   "poster": "media/events/ep-iii-rots.webp",
+   "w": 574,
+   "h": 800,
+   "tint": "#59200d",
+   "event": "ep-iii-rots"
+  },
+  {
+   "slug": "football-accuracy",
+   "name": "Football Accuracy",
+   "poster": "media/events/football-accuracy.webp",
+   "w": 1440,
+   "h": 810,
+   "tint": "#101b56",
+   "event": "football-accuracy"
+  },
+  {
+   "slug": "free-throws",
+   "name": "Free Throws",
+   "poster": "media/events/free-throws.webp",
+   "w": 1600,
+   "h": 1067,
+   "tint": "#0d2359",
+   "event": "free-throws"
+  },
+  {
+   "slug": "godzilla-unleashed",
+   "name": "Godzilla Unleashed",
+   "poster": "media/events/godzilla-unleashed.webp",
+   "w": 179,
+   "h": 281,
+   "tint": "#58140e",
+   "event": null
+  },
+  {
+   "slug": "gta-guesser",
+   "name": "GTA Guesser",
+   "poster": "media/events/gta-guesser.webp",
+   "w": 640,
+   "h": 743,
+   "tint": "#522514",
+   "event": "gta-guesser"
+  },
+  {
+   "slug": "jp-evolution",
+   "name": "JP Evolution",
+   "poster": "media/events/jp-evolution.webp",
+   "w": 185,
+   "h": 281,
+   "tint": "#4b2f1b",
+   "event": "jp-evolution"
+  },
+  {
+   "slug": "kicking",
+   "name": "Kicking",
+   "poster": "media/events/kicking.webp",
+   "w": 374,
+   "h": 348,
+   "tint": "#4a391c",
+   "event": null,
+   "video": "media/events/kicking.mp4"
+  },
+  {
+   "slug": "kung-fu-panda",
+   "name": "Kung Fu Panda",
+   "poster": "media/events/kung-fu-panda.webp",
+   "w": 679,
+   "h": 800,
+   "tint": "#553f11",
+   "event": null
+  },
+  {
+   "slug": "long-drive",
+   "name": "Long Drive",
+   "poster": "media/events/long-drive.webp",
+   "w": 780,
+   "h": 430,
+   "tint": "#3b4a1c",
+   "event": null,
+   "video": "media/events/long-drive.mp4"
+  },
+  {
+   "slug": "mario-kart",
+   "name": "Mario Kart",
+   "poster": "media/events/mario-kart.webp",
+   "w": 452,
+   "h": 678,
+   "tint": "#583f0e",
+   "event": "mario-kart"
+  },
+  {
+   "slug": "mario-party",
+   "name": "Mario Party",
+   "poster": "media/events/mario-party.webp",
+   "w": 989,
+   "h": 1600,
+   "tint": "#59490d",
+   "event": null
+  },
+  {
+   "slug": "mile-run",
+   "name": "Mile Run",
+   "poster": "media/events/mile-run.webp",
+   "w": 287,
+   "h": 584,
+   "tint": "#1c284a",
+   "event": "mile-run"
+  },
+  {
+   "slug": "nascar-thunder-2004",
+   "name": "Nascar Thunder 2004",
+   "poster": "media/events/nascar-thunder-2004.webp",
+   "w": 565,
+   "h": 550,
+   "tint": "#591b0d",
+   "event": "nascar-thunder-2004"
+  },
+  {
+   "slug": "poker",
+   "name": "Poker",
+   "poster": "media/events/poker.webp",
+   "w": 1600,
+   "h": 1600,
+   "tint": "#59100d",
+   "event": null
+  },
+  {
+   "slug": "punting",
+   "name": "Punting",
+   "poster": "media/events/punting.webp",
+   "w": 800,
+   "h": 587,
+   "tint": "#1c2b4a",
+   "event": null
+  },
+  {
+   "slug": "quiplash",
+   "name": "Quiplash",
+   "poster": "media/events/quiplash.webp",
+   "w": 1600,
+   "h": 900,
+   "tint": "#214a1c",
+   "event": "quiplash"
+  },
+  {
+   "slug": "skyrim-guesser",
+   "name": "Skyrim Guesser",
+   "poster": "media/events/skyrim-guesser.webp",
+   "w": 716,
+   "h": 1167,
+   "tint": "#1c3a4a",
+   "event": "skyrim-guesser"
+  },
+  {
+   "slug": "sling-pigskin",
+   "name": "Sling Pigskin",
+   "poster": "media/events/sling-pigskin.webp",
+   "w": 444,
+   "h": 450,
+   "tint": "#4a3b1c",
+   "event": "sling-pigskin"
+  },
+  {
+   "slug": "smash",
+   "name": "Smash",
+   "poster": "media/events/smash.webp",
+   "w": 702,
+   "h": 1137,
+   "tint": "#59480d",
+   "event": "smash"
+  },
+  {
+   "slug": "spiderman-2",
+   "name": "Spider-Man 2",
+   "poster": "media/events/spiderman-2.webp",
+   "w": 1091,
+   "h": 1600,
+   "tint": "#590d0d",
+   "event": null
+  },
+  {
+   "slug": "super-mario-strikers-cover",
+   "name": "Super Mario Strikers",
+   "poster": "media/events/super-mario-strikers-cover.webp",
+   "w": 250,
+   "h": 349,
+   "tint": "#57220f",
+   "event": null
+  },
+  {
+   "slug": "sw-bombad-racing",
+   "name": "SW Bombad Racing",
+   "poster": "media/events/sw-bombad-racing.webp",
+   "w": 577,
+   "h": 800,
+   "tint": "#59440d",
+   "event": "sw-bombad-racing"
+  },
+  {
+   "slug": "turok",
+   "name": "Turok",
+   "poster": "media/events/turok.webp",
+   "w": 557,
+   "h": 800,
+   "tint": "#4f2017",
+   "event": "turok"
+  },
+  {
+   "slug": "wwe-smackdown-vs-raw-2007",
+   "name": "WWE Smackdown Vs Raw 2007",
+   "poster": "media/events/wwe-smackdown-vs-raw-2007.webp",
+   "w": 550,
+   "h": 800,
+   "tint": "#59140d",
+   "event": "wwe-smackdown-vs-raw-2007"
+  },
+  {
+   "slug": "yu-gi-oh",
+   "name": "Yu-Gi-Oh",
+   "poster": "media/events/yu-gi-oh.webp",
+   "w": 741,
+   "h": 1078,
+   "tint": "#201c4a",
+   "event": "yu-gi-oh"
+  }
+ ]
+}

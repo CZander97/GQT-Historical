@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>GQT Invitational · Record Book</title>
+  <meta name="description" content="The GQT Invitational record book: podiums, leaderboards, player cards, every stat and every rating, year by year." />
+  <meta name="theme-color" content="#0a0e17" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="GQT Invitational · Record Book" />
+  <meta property="og:description" content="Podiums, leaderboards, player cards and every stat from the GQT Invitational." />
+  <meta property="og:url" content="/" />
+  <meta property="og:image" content="media/og.jpg" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230a0e17'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial Narrow,Arial,sans-serif' font-weight='900' font-size='26' fill='%23e3e7ee' transform='skewX(-10) translate(7 0)'%3EGQT%3C/text%3E%3Crect x='12' y='47' width='40' height='4' fill='%23f5b81c'/%3E%3Crect x='12' y='51' width='40' height='2' fill='%23d42027'/%3E%3C/svg%3E" />
+  <link rel="preload" as="image" href="media/logo-900.webp" fetchpriority="high" />
+</head>
+<body class="at-title">
+  <script>if (location.hash.length > 1) document.body.className = "";   /* a direct link skips the title screen without flashing it */</script>
+  <a class="skip" href="#screen" id="skip">Skip to content</a>
+  <!-- the rotating event backdrop (Madden 05's cycling team showcase) -->
+  <div class="backdrop" aria-hidden="true">
+    <div class="wash"></div>
+    <div class="streaks"></div>
+    <div class="show" id="show"></div>
+    <div class="flare"></div>
+    <div class="bigname" id="bigname"></div>
+    <div class="flash" id="flash"></div>
+  </div>
+  <div class="screen-dim" aria-hidden="true"></div>
+
+  <section class="title" id="title" aria-label="GQT Invitational">
+    <button class="title__start" id="start" type="button">
+      <img class="title__logo" src="media/logo-900.webp" width="900" height="900" alt="GQT Invitational" />
+      <span class="title__press">Press Start</span>
+    </button>
+  </section>
+
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <h1 class="sr-only">GQT Invitational Record Book</h1>
+    <a class="brand" href="#menu" aria-label="GQT Invitational main menu">
+      <img class="brand__logo" src="media/logo-480.webp" width="480" height="480" alt="" />
+      <span class="wordmark" aria-hidden="true"><span class="wordmark__gqt">GQT</span><span class="wordmark__inv">Invitational</span></span>
+    </a>
+    <ul class="bars" id="bars">
+      <li><a href="#podiums" data-route="podiums"><svg class="bars__x" viewBox="0 0 26 26" aria-hidden="true"><use href="#icon-x" /></svg><span class="bars__label">Podiums</span></a></li>
+      <li><a href="#leaderboards" data-route="leaderboards"><svg class="bars__x" viewBox="0 0 26 26" aria-hidden="true"><use href="#icon-x" /></svg><span class="bars__label">Leaderboards</span></a></li>
+      <li><a href="#cards" data-route="cards"><svg class="bars__x" viewBox="0 0 26 26" aria-hidden="true"><use href="#icon-x" /></svg><span class="bars__label">Player Cards</span></a></li>
+      <li><a href="#stats" data-route="stats"><svg class="bars__x" viewBox="0 0 26 26" aria-hidden="true"><use href="#icon-x" /></svg><span class="bars__label">All Stats</span></a></li>
+      <li><a href="#ratings" data-route="ratings"><svg class="bars__x" viewBox="0 0 26 26" aria-hidden="true"><use href="#icon-x" /></svg><span class="bars__label">Ratings</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="screen" id="screen" tabindex="-1"></main>
+
+  <div class="ticker" role="marquee" aria-label="Stat ticker">
+    <div class="ticker__track" id="ticker"></div>
+    <button class="ticker__pause" id="pause" type="button" aria-pressed="false">
+      <svg aria-hidden="true"><use href="#icon-pause" /></svg><span class="sr-only">Pause motion</span>
+    </button>
+  </div>
+
+  <div class="vig" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="icon-x" viewBox="0 0 26 26"><circle cx="13" cy="13" r="11.5" fill="#0a0e17" stroke="#fff" stroke-width="2" /><path d="M8.5 8.5l9 9M17.5 8.5l-9 9" stroke="#7fb2ff" stroke-width="2.6" stroke-linecap="round" /></symbol>
+      <symbol id="icon-back" viewBox="0 0 20 20"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square" /></symbol>
+      <symbol id="icon-diamond" viewBox="0 0 10 10"><path d="M5 0 10 5 5 10 0 5z" fill="currentColor" /></symbol>
+      <symbol id="icon-sort" viewBox="0 0 10 14"><path d="M5 1 9 6H1zM5 13 1 8h8z" fill="currentColor" /></symbol>
+      <symbol id="icon-pause" viewBox="0 0 16 16"><path d="M4 3h3v10H4zM9 3h3v10H9z" fill="currentColor" /></symbol>
+      <symbol id="icon-play" viewBox="0 0 16 16"><path d="M5 3l8 5-8 5z" fill="currentColor" /></symbol>
+    </defs>
+  </svg>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

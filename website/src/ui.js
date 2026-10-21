@@ -1,0 +1,53 @@
+// Small shared helpers for the screens.
+import data from "./data.json";
+import media from "./media.json";
+
+export { data, media };
+
+export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+export const eventsBySlug = Object.fromEntries(data.events.map((e) => [e.slug, e]));
+
+/** An empty cell: a dash for the eye, words for screen readers. */
+export const DASH = `<span class="dash" aria-hidden="true">–</span><span class="sr-only">none</span>`;
+
+const nf = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
+const nf2 = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+/** Points: up to two decimals (totals: always two), a real minus sign, red when negative. */
+export function pts(n, { sign = false, fixed = false } = {}) {
+  if (n === null || n === undefined || n === "") return DASH;
+  const neg = n < 0;
+  const body = (fixed ? nf2 : nf).format(Math.abs(n));
+  return `<span class="num${neg ? " neg" : ""}">${neg ? "−" : sign && n > 0 ? "+" : ""}${body}</span>`;
+}
+/** A raw stat cell value: a time ({t, d}), a number, or text like "No". */
+export function stat(v) {
+  if (v === null || v === undefined || v === "") return DASH;
+  if (typeof v === "object") return `<span class="num">${esc(v.d)}</span>`;
+  if (typeof v === "number") return `<span class="num">${nf.format(v)}</span>`;
+  return esc(v);
+}
+export const statSortValue = (v) => (v === null || v === undefined || v === "" ? null : typeof v === "object" ? v.t : typeof v === "number" ? v : String(v));
+
+/** A player photo as { src, w, h }, or null. */
+export const photo = (name) => media.players[name] || null;
+
+/** The event's slide image, for board headers (JP Evolution Bets borrows JP Evolution's). */
+export function eventImage(slug) {
+  return media.events.find((e) => e.event === slug) || media.events.find((e) => e.event && slug.startsWith(e.event + "-")) || null;
+}
+
+/** Shared screen header: compact logo, back to the main menu, the screen title. */
+export function head(title, aside = "") {
+  return `<header class="head">
+    <a class="head__brand" href="#menu" aria-label="GQT Invitational main menu"><img src="${media.logo.small}" width="62" height="62" alt="" /></a>
+    <a class="head__back" href="#menu"><svg aria-hidden="true"><use href="#icon-back" /></svg>Main Menu</a>
+    <h1 class="head__title" id="screen-title" tabindex="-1">${esc(title)}</h1>
+    ${aside ? `<div class="head__aside">${aside}</div>` : ""}
+  </header>`;
+}
+
+export const foot = () => `<p class="foot">GQT Invitational · Est. ${data.years[0]} · Record through ${data.years.at(-1)}</p>`;
+
+/** Medal tone for a rank: gold, chrome, bronze. */
+export const medal = (rank) => (rank === 1 ? "gold" : rank === 2 ? "chrome" : rank === 3 ? "bronze" : "");
