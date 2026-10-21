@@ -11,3 +11,7 @@ Thumbs.db
 desktop.ini
 .DS_Store
 *.log
+# regenerated on every build / edit
+website/src/data.json
+.impeccable/hook.cache.json
+website/.impeccable/hook.cache.json
