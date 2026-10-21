@@ -5,13 +5,19 @@ It has a title screen, the main menu, Podiums, Leaderboards, Player Cards, All S
 
 Everything on it comes from `GQT Historical Stats*.xlsx` in the folder above this one.
 
+**Live:** https://czander97.github.io/GQT-Historical/ (GitHub Pages, repo `CZander97/GQT-Historical`).
+Every push to `main` rebuilds the site from the spreadsheet and republishes it in about two minutes
+(`.github/workflows/deploy-pages.yml`; progress shows in the repo's Actions tab).
+
 ## Every year after the Invitational
 
 1. Add the new year's rows to the spreadsheet (All Stats, Ratings, Overalls), same layout as before,
    and save it in the project folder. If there are several `GQT Historical Stats*.xlsx` files, the newest one is used.
 2. New event? Add its picture to `Event Images/` (name it after the event, e.g. `Mario_Kart.jpg`;
    GIFs are fine), then run `npm run media`.
-3. Run `npm run build`. New years, events and players appear on their own.
+3. Publish: from the project folder run `git add -A`, then `git commit -m "Add 2027 results"`, then `git push`.
+   New years, events and players appear on their own. If several spreadsheets are in the folder,
+   the newest one wins, and on GitHub (where every file has the same date) the highest-numbered one wins.
 
 ## Commands (run inside `website/`)
 
