@@ -48,16 +48,18 @@
 .ovr-num { background: linear-gradient(180deg, #f7f7f7 0%, #b9b9b9 25%, #ffffff 45%, #7c7c7c 62%, #eeeeee 80%, #9a9a9a 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
   font: 400 6.6cqi "Helvetica Neue", Arial, sans-serif; text-align: center; }
 .bottom-zone { position: absolute; left: 8%; top: 73.6%; width: 84%; height: 19%; z-index: 3; display: flex; flex-direction: column; padding: 0 3.5%; }
-.stats-row { flex: 1 1 auto; min-height: 0; display: flex; gap: 3%; }
+.stats-row { flex: 1 1 auto; min-height: 0; display: flex; }
 /* the bars and Top Events share one row grid (one row per rating bar), so "Top Events" lines up with
    the first bar and each event sits beside a bar, inside the textbox */
 .bars-col, .events-col { display: grid; grid-template-rows: repeat(var(--rows, 6), 1fr); align-items: center; padding-top: 4cqi; }
-.bars-col { flex: 1 1 auto; min-width: 0; }
+/* fixed split, the same on every card: bars and labels take 2/3 of the textbox, Top Events 1/3
+   (long event names end in "…") */
+.bars-col { flex: 0 0 66.67%; min-width: 0; padding-right: 2%; }
 .stat-row { display: flex; align-items: center; gap: 4px; }
 .stat-label { flex: 0 0 auto; width: 41%; font: 700 2.15cqi "Helvetica Neue", Arial, sans-serif; color: var(--ink); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bar-track { flex: 1 1 auto; height: 1.5cqi; background: var(--bar-track); border: 1px solid var(--bar-track-line); border-radius: 3px; overflow: hidden; }
 .bar-fill { height: 100%; background-image: linear-gradient(90deg, #c0272d 0%, #e8c419 50%, #3fa34d 75%, #3fa34d 100%); background-repeat: no-repeat; }
-.events-col { flex: 0 0 auto; width: max-content; max-width: 52%; padding-left: 3%; }   /* as wide as the longest event name (as in the original card), bars take the rest */
+.events-col { flex: 0 0 33.33%; min-width: 0; padding-left: 2%; }
 .events-title { color: var(--ink-soft); font: 700 2.05cqi "Helvetica Neue", Arial, sans-serif; letter-spacing: .08em; text-transform: uppercase; text-decoration: underline; line-height: 1.1; }
 .events-list { display: contents; list-style: none; }
 .event-item { color: var(--ink); font: 600 2.2cqi/1.15 "Helvetica Neue", Arial, sans-serif; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
