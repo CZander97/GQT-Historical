@@ -41,7 +41,7 @@ function card(p, index) {
           </div></div>
           <div class="star-row" aria-hidden="true">${stars}</div>
           <div class="bottom-zone">
-            <div class="stats-row">
+            <div class="stats-row" style="--rows:${Math.max(entries.length, p.topEvents.length + 1)}">
               <div class="bars-col">${bars}</div>
               <div class="events-col"><div class="events-title">Top Events</div><ol class="events-list">${events}</ol></div>
             </div>
