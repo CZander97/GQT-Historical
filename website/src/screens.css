@@ -104,7 +104,22 @@
 .controls { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-bottom: 18px; }
 .controls .seg button { min-height: 40px; }
 .tbl-panel { padding: 0; }
-.tbl-scroll { overflow: auto; max-height: calc(100dvh - var(--ticker-h) - 120px); overscroll-behavior: contain; }
+/* position: relative keeps the hidden screen-reader labels in the cells inside this box; otherwise they
+   anchor to the page and stretch it far below the table */
+.tbl-scroll { position: relative; overflow: auto; max-height: calc(100dvh - var(--ticker-h) - 120px); overscroll-behavior: contain; }
+
+/* desktop: table screens are exactly one viewport tall. The header, legend and filters stay put,
+   the table panel takes the rest of the height, and only the table scrolls (no page scroll). */
+@media (min-width: 769px) {
+  body.at-screen .screen:has(.tbl-panel) { display: flex; flex-direction: column; height: 100dvh; }
+  .screen:has(.tbl-panel) > .head, .screen:has(.tbl-panel) > .foot { flex: none; width: 100%; }
+  .screen:has(.tbl-panel) > .head { margin-bottom: 18px; }
+  .screen:has(.tbl-panel) > .foot { margin-top: 12px; }
+  .screen:has(.tbl-panel) > .wrap { flex: 1 1 auto; min-height: 0; width: 100%; display: flex; flex-direction: column; }
+  .screen:has(.tbl-panel) > .wrap > :not(.tbl-panel) { flex: none; }
+  .screen:has(.tbl-panel) .tbl-panel { flex: 0 1 auto; min-height: 0; display: flex; flex-direction: column; }
+  .screen:has(.tbl-panel) .tbl-scroll { flex: 0 1 auto; min-height: 0; max-height: none; }
+}
 .tbl-scroll:focus-visible { outline-offset: -3px; }
 .tbl { border-collapse: separate; border-spacing: 0; font-variant-numeric: tabular-nums; font-size: 16px; width: max-content; min-width: 100%; }
 .tbl th, .tbl td { padding: 9px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; text-align: left; background-clip: padding-box; }

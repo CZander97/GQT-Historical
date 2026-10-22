@@ -28,7 +28,7 @@ function card(p, index) {
   const img = photo(p.name);
   const initials = p.name.slice(0, 2).toUpperCase();
 
-  return `<li class="card" style="--flip-delay:${(0.25 + index * 0.18).toFixed(2)}s">
+  return `<li class="card" style="--flip-delay:${(0.5 + index * 0.18).toFixed(2)}s">
     <div class="card-tilt">
       <div class="card-flip">
         <div class="face back"><img src="${media.cards.back}" width="469" height="682" alt="" /></div>
@@ -59,6 +59,13 @@ export function renderCards(el) {
   el.innerHTML = `${head("Player Cards")}
     <div class="wrap"><ol class="cards" style="--star:url('${new URL(media.cards.star, document.baseURI).href}')">${data.cards.map(card).join("")}</ol></div>
     ${foot()}`;
+
+  // the cards show their backs, then flip one by one once the back art is ready
+  // (on a first visit it may still be downloading); never wait more than 1.5s
+  const list = el.querySelector(".cards");
+  const ready = () => list.classList.add("is-ready");
+  const back = list.querySelector(".face.back img");
+  Promise.race([back?.decode() ?? Promise.resolve(), new Promise((r) => setTimeout(r, 1500))]).then(ready, ready);
 
   if (!FINE || REDUCED) return;
   // desktop: the card leans toward the cursor, at most 8 degrees

@@ -13,7 +13,12 @@
   box-shadow: 0 10px 26px rgba(0,0,0,.6); border-radius: 5px; }
 @keyframes cardFlipReveal { from { transform: rotateY(180deg); } to { transform: rotateY(0deg); } }
 .face { position: absolute; inset: 0; border-radius: 5px; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
-.face.back { transform: rotateY(180deg); background: #000; }
+/* both faces need their own 3D transform: Safari (all iPhone browsers) only hides the back side
+   of an element that has one, otherwise the front shows through, mirrored, before the flip */
+.face.front { transform: rotateY(0deg) translateZ(1px); }
+.face.back { transform: rotateY(180deg) translateZ(1px); background: #000; }
+/* hold on the card backs until the back image has loaded (cards.js adds .is-ready) */
+.cards:not(.is-ready) .card-flip { animation-play-state: paused; }
 .face.back img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .card .photo, .card .photo-fallback, .effect-layer { position: absolute; left: 14.29%; top: 22.14%; width: 71%; height: 48.97%; }
 .card .photo { object-fit: cover; object-position: top center; z-index: 1; }
@@ -46,7 +51,7 @@
 .stats-row { flex: 1 1 auto; min-height: 0; display: flex; gap: 3%; }
 .bars-col { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; justify-content: space-evenly; padding-top: 4cqi; }
 .stat-row { display: flex; align-items: center; gap: 4px; }
-.stat-label { flex: 0 0 auto; width: 38%; font: 700 2.4cqi "Helvetica Neue", Arial, sans-serif; color: var(--ink); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stat-label { flex: 0 0 auto; width: 41%; font: 700 2.15cqi "Helvetica Neue", Arial, sans-serif; color: var(--ink); text-transform: uppercase; letter-spacing: .01em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .bar-track { flex: 1 1 auto; height: 1.5cqi; background: var(--bar-track); border: 1px solid var(--bar-track-line); border-radius: 3px; overflow: hidden; }
 .bar-fill { height: 100%; background-image: linear-gradient(90deg, #c0272d 0%, #e8c419 50%, #3fa34d 75%, #3fa34d 100%); background-repeat: no-repeat; }
 .events-col { flex: 0 0 30%; padding-left: 3%; display: flex; flex-direction: column; justify-content: center; }

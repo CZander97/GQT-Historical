@@ -2,7 +2,7 @@
 import "./style.css";
 import "./screens.css";
 import "./cards.css";
-import { data, esc, eventsBySlug, pts, stat } from "./ui.js";
+import { data, media, esc, eventsBySlug, pts, stat } from "./ui.js";
 import { startBackdrop, featureEvent, layout, setPaused } from "./backdrop.js";
 import { renderPodiums } from "./screens/podiums.js";
 import { renderLeaderboards } from "./screens/leaderboards.js";
@@ -151,4 +151,6 @@ document.getElementById("skip").addEventListener("click", (e) => {
 
 buildTicker();
 startBackdrop();
+// warm the card-back art so Player Cards opens on the backs, not a blank face
+(window.requestIdleCallback || setTimeout)(() => { new Image().src = media.cards.back; });
 route();

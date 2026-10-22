@@ -267,11 +267,11 @@ async function main() {
   const ratings = readRatings(eventsBySlug);
   const overalls = readOveralls(new Set(players));
 
-  // player cards: category bars, rounded Overall, top three event ratings
+  // player cards: category bars, rounded Overall, top four event ratings
   const cards = players.map((name) => {
     const o = overalls.players[name] || {};
     const r = ratings.players[name] || {};
-    const top = Object.entries(r).filter(([, v]) => typeof v === "number").sort((a, b) => b[1] - a[1]).slice(0, 3)
+    const top = Object.entries(r).filter(([, v]) => typeof v === "number").sort((a, b) => b[1] - a[1]).slice(0, 4)
       .map(([s]) => (ratings.events.find((e) => e.slug === s) || eventsBySlug[s] || { name: s }).name);
     const overallKey = Object.keys(o).find((k) => k.toLowerCase() === "overall");
     return {
