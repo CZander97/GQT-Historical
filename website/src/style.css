@@ -13,6 +13,7 @@
   --text: #eef1f6;
   --muted: #9aa4b8;
   --gold: #f5b81c;
+  --points: #8ec5ff;   /* points and totals in All Stats; the menu ✕ glyph's blue */
   --red: #d42027;
   --red-hi: #ea3a3f;
   --red-lo: #a3141a;
@@ -239,9 +240,14 @@ body.at-screen .screen { display: block; animation: screen-in .28s var(--ease-ou
    ====================================================================== */
 @media (max-width: 768px) {
   :root { --menu-w: 100vw; }
-  .show { left: 0; top: var(--show-top, 18vh); bottom: var(--show-bottom, 50vh); overflow: hidden; }
-  .show .media { height: 100%; max-width: 92%; }
-  .show .media.wide { height: auto; width: 92%; max-height: 100%; }
+  .show { left: 0; top: var(--show-top, 0px); bottom: var(--show-bottom, 50vh); overflow: hidden; }
+  /* the image runs behind the logo and the event name: darken its top and bottom so both stay legible */
+  .show::after { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: linear-gradient(180deg, rgba(10,14,23,.6) 0%, rgba(10,14,23,0) 24%, rgba(10,14,23,0) 64%, rgba(10,14,23,.9) 100%); }
+  body.at-menu .bigname { opacity: 1; color: #f4f6fa; -webkit-text-stroke: 0;
+    text-shadow: 0 2px 0 rgba(5,7,12,.95), 0 0 14px rgba(5,7,12,.9), 0 0 2px rgba(5,7,12,1); }
+  /* fill the whole band; wide photos lose a little of their sides (108% covers the slow sideways drift) */
+  .show .media, .show .media.wide { width: 108%; height: 100%; max-width: none; object-fit: cover; }
   .bars { top: auto; bottom: calc(var(--ticker-h) + 20px); width: 92vw; gap: 7px; }
   .bars a { height: 56px; padding-left: 6vw; font-size: 28px; }
   .brand { gap: 12px; }

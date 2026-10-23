@@ -159,7 +159,11 @@
 .tbl .grp-start { border-left: 1px solid rgba(238,241,246,.22); }
 .tbl .pts-col { font-weight: 700; }
 .tbl thead .pts-col .sort { color: var(--text); }
-.tbl .total { font-weight: 700; color: var(--text); }   /* gold is for winners only */
+.tbl .total { font-weight: 700; color: var(--text); }
+/* All Stats: three colors so a row reads at a glance: gold player, blue points/total, white raw stats
+   (negative points keep their red from .neg) */
+.stats-tbl tbody th { color: var(--gold); }
+.stats-tbl td.pts-col, .stats-tbl td.total, .stats-tbl thead .pts-col .sort, .stats-tbl thead .stick--3 .sort { color: var(--points); }
 
 /* sticky identity columns */
 .tbl .stick { position: sticky; z-index: 2; background: #141c30; }

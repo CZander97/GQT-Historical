@@ -94,7 +94,6 @@ export function featureEvent(eventSlug) {
 // (phones, where the menu sits low and the image fits between logo and name).
 export function layout() {
   const bars = document.getElementById("bars").getBoundingClientRect();
-  const brand = document.querySelector(".brand").getBoundingClientRect();
   const tickerTop = document.querySelector(".ticker").getBoundingClientRect().top;
   if (!bars.height) return;                         // menu not laid out (inner screen); keep last layout
   const gap = 14;
@@ -112,8 +111,9 @@ export function layout() {
     const nameTop = bars.top - gap - size * 0.86;
     root.setProperty("--name-size", size.toFixed(1) + "px");
     root.setProperty("--name-top", nameTop.toFixed(1) + "px");
-    root.setProperty("--show-top", (brand.bottom + gap + 4).toFixed(1) + "px");
-    root.setProperty("--show-bottom", (innerHeight - nameTop + 8).toFixed(1) + "px");
+    // the image fills the screen from the top down to the menu, behind the logo and the event name
+    root.setProperty("--show-top", "0px");
+    root.setProperty("--show-bottom", (innerHeight - bars.top).toFixed(1) + "px");
   }
 }
 
