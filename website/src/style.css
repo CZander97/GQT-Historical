@@ -246,8 +246,9 @@ body.at-screen .screen { display: block; animation: screen-in .28s var(--ease-ou
     background: linear-gradient(180deg, rgba(10,14,23,.6) 0%, rgba(10,14,23,0) 24%, rgba(10,14,23,0) 64%, rgba(10,14,23,.9) 100%); }
   body.at-menu .bigname { opacity: 1; color: #f4f6fa; -webkit-text-stroke: 0;
     text-shadow: 0 2px 0 rgba(5,7,12,.95), 0 0 14px rgba(5,7,12,.9), 0 0 2px rgba(5,7,12,1); }
-  /* fill the whole band; wide photos lose a little of their sides (108% covers the slow sideways drift) */
-  .show .media, .show .media.wide { width: 108%; height: 100%; max-width: none; object-fit: cover; }
+  /* the whole image fits the band's height, never cut top or bottom (the 1.07 leaves room for the
+     slow push-in zoom); wide photos run past the screen sides instead. Fades and ghost trail unchanged. */
+  .show .media, .show .media.wide { width: auto; height: calc(100% / 1.07); max-width: none; max-height: none; object-fit: contain; }
   .bars { top: auto; bottom: calc(var(--ticker-h) + 20px); width: 92vw; gap: 7px; }
   .bars a { height: 56px; padding-left: 6vw; font-size: 28px; }
   .brand { gap: 12px; }
