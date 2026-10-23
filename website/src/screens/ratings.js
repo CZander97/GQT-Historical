@@ -15,16 +15,16 @@ function shade(v) {
   return t < 0.02 ? "" : `background:rgba(${c < MID ? RED : GREEN},${(t * 0.62).toFixed(3)})`;
 }
 
-function cell(v, best) {
+function cell(v, best, shaded = true) {
   if (v === null || v === undefined) return `<td class="r"><span class="dash" aria-hidden="true">–</span><span class="sr-only">no rating</span></td>`;
-  return `<td class="r rt${best ? " is-best" : ""}" style="${shade(v)}"><span class="num">${Math.round(v)}</span>${best ? `<span class="sr-only"> (best)</span>` : ""}</td>`;
+  return `<td class="r rt${best ? " is-best" : ""}"${shaded ? ` style="${shade(v)}"` : ""}><span class="num">${Math.round(v)}</span>${best ? `<span class="sr-only"> (best)</span>` : ""}</td>`;
 }
 
-function row(label, values, { sub = "", cls = "" } = {}) {
+function row(label, values, { sub = "", cls = "", shaded = true } = {}) {
   const nums = values.filter((v) => typeof v === "number");
   const max = nums.length ? Math.max(...nums) : null;
   return `<tr class="${cls}"><th scope="row" class="stick stick--1">${esc(label)}${sub ? `<small>${esc(sub)}</small>` : ""}</th>
-    ${values.map((v) => cell(v, v !== null && v === max)).join("")}</tr>`;
+    ${values.map((v) => cell(v, v !== null && v === max, shaded)).join("")}</tr>`;
 }
 
 export function renderRatings(el) {
@@ -48,7 +48,7 @@ export function renderRatings(el) {
           <caption class="sr-only">Ratings out of 99 for each player, by category and by event</caption>
           <thead><tr><th scope="col" class="stick stick--1">Rating</th>${players.map((p) => `<th scope="col" class="r">${esc(p)}</th>`).join("")}</tr></thead>
           <tbody>
-            ${row(overallKey, players.map((p) => o.players[p]?.[overallKey] ?? null), { cls: "is-overall" })}
+            ${row(overallKey, players.map((p) => o.players[p]?.[overallKey] ?? null), { cls: "is-overall", shaded: false })}
             ${o.categories.map((c) => row(c, players.map((p) => o.players[p]?.[c] ?? null), { cls: "is-cat" })).join("")}
           </tbody>
           ${groups.map((g) => `<tbody>
