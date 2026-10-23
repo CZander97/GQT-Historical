@@ -1,7 +1,7 @@
 // All Stats: the spreadsheet's All Stats tab as a table. Every player-year is a row,
 // every event a column group (its raw stats, then points). Filter by year and player,
 // switch to points only, sort by any points column.
-import { data, esc, head, foot, pts, stat, statSortValue, eventsBySlug } from "../ui.js";
+import { data, esc, head, foot, pts, stat, statSortValue, eventsBySlug, decimals } from "../ui.js";
 
 const state = { year: "all", player: "all", view: "full", sort: { key: "default", dir: -1 } };
 
@@ -44,6 +44,9 @@ function table() {
   const events = data.events.filter((e) => rows.some((r) => r.results[e.slug]));
   const cols = events.map((e) => ({ e, labels: state.view === "points" ? ["Points"] : [...e.statLabels.filter((l) => rows.some((r) => r.results[e.slug]?.stats.some((s) => s.label === l && s.v !== null))), "Points"] }));
   if (!rows.length) return `<p class="empty">No rows for that combination. ${esc(state.player)} didn’t play in ${state.year}.</p>`;
+  // decimals per column from every row (not just the filtered ones), so a column never changes format
+  const cell = (r, slug, l) => { const res = r.results[slug]; return !res ? null : l === "Points" ? res.points : res.stats.find((s) => s.label === l)?.v; };
+  const dp = Object.fromEntries(cols.flatMap(({ e, labels }) => labels.map((l) => [`${e.slug}:${l}`, decimals(data.allStats.map((r) => cell(r, e.slug, l)))])));
 
   return `<div class="tbl-scroll" tabindex="0" role="region" aria-label="All stats table, scrolls sideways">
     <table class="tbl stats-tbl${state.view === "points" ? " is-points" : ""}">
@@ -66,7 +69,8 @@ function table() {
             const res = r.results[e.slug];
             const cls = `r${i === 0 ? " grp-start" : ""}${l === "Points" ? " pts-col" : ""}`;
             if (!res) return `<td class="${cls}"><span class="dash" aria-hidden="true">–</span><span class="sr-only">did not compete</span></td>`;
-            return `<td class="${cls}">${l === "Points" ? pts(res.points) : stat(res.stats.find((s) => s.label === l)?.v)}</td>`;
+            const d = dp[`${e.slug}:${l}`];
+            return `<td class="${cls}">${l === "Points" ? pts(res.points, { dp: d }) : stat(cell(r, e.slug, l), d)}</td>`;
           }).join("")).join("")}
         </tr>`).join("")}
       </tbody>

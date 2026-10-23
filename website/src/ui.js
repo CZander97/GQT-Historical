@@ -12,19 +12,25 @@ export const eventsBySlug = Object.fromEntries(data.events.map((e) => [e.slug, e
 export const DASH = `<span class="dash" aria-hidden="true">–</span><span class="sr-only">none</span>`;
 
 const nf = new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 });
-const nf2 = new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-/** Points: up to two decimals (totals: always two), a real minus sign, red when negative. */
-export function pts(n, { sign = false, fixed = false } = {}) {
+const fixedNf = {};
+const nfFixed = (dp) => (fixedNf[dp] ??= new Intl.NumberFormat("en-US", { minimumFractionDigits: dp, maximumFractionDigits: dp }));
+
+/** The most decimals any number in a column uses (max 2), so the column lines up: 5.30 next to 5.06. */
+export const decimals = (values) =>
+  Math.min(2, Math.max(0, ...values.filter((v) => typeof v === "number").map((v) => (String(v).split(".")[1] || "").length)));
+
+/** Points: `dp` fixed decimals for a column (totals: fixed 2), a real minus sign, red when negative. */
+export function pts(n, { sign = false, fixed = false, dp } = {}) {
   if (n === null || n === undefined || n === "") return DASH;
   const neg = n < 0;
-  const body = (fixed ? nf2 : nf).format(Math.abs(n));
+  const body = (dp !== undefined ? nfFixed(dp) : fixed ? nfFixed(2) : nf).format(Math.abs(n));
   return `<span class="num${neg ? " neg" : ""}">${neg ? "−" : sign && n > 0 ? "+" : ""}${body}</span>`;
 }
-/** A raw stat cell value: a time ({t, d}), a number, or text like "No". */
-export function stat(v) {
+/** A raw stat cell value: a time ({t, d}), a number (`dp` fixed decimals for a column), or text like "No". */
+export function stat(v, dp) {
   if (v === null || v === undefined || v === "") return DASH;
   if (typeof v === "object") return `<span class="num">${esc(v.d)}</span>`;
-  if (typeof v === "number") return `<span class="num">${nf.format(v)}</span>`;
+  if (typeof v === "number") return `<span class="num">${(dp !== undefined ? nfFixed(dp) : nf).format(v)}</span>`;
   return esc(v);
 }
 export const statSortValue = (v) => (v === null || v === undefined || v === "" ? null : typeof v === "object" ? v.t : typeof v === "number" ? v : String(v));
