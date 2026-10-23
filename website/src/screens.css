@@ -192,8 +192,10 @@
 .rt.is-best { color: #ffe7a3; font-weight: 700; box-shadow: inset 0 -3px 0 var(--gold); }   /* pale gold: 4.8:1 against the deepest green cell (#2f7144) */
 .rt-tbl .is-overall th, .rt-tbl .is-overall td { font-size: 22px; border-bottom: 2px solid rgba(238,241,246,.25); }
 .rt-tbl .is-overall th { color: var(--gold); font-size: 24px; }
-/* Overall is the headline, not a heat-map cell: no shading, gold numbers like its label (the best keeps its underline) */
-.rt-tbl .is-overall td.rt { color: var(--gold); }
+/* Overall is the headline, not a heat-map cell: no shading, no "best" mark, light blue numbers */
+.rt-tbl .is-overall td.rt { color: var(--points); }
+/* player names and ratings sit centered in their columns (row labels stay left) */
+.rt-tbl th.r, .rt-tbl td.r { text-align: center; }
 .rt-tbl .is-cat th { font-size: 17px; }
 .rt-tbl .grp-row th { position: static; padding-top: 22px; background: transparent; color: var(--gold); font: 900 22px/1 var(--head); text-transform: uppercase; letter-spacing: .04em; text-align: left; border-bottom: 2px solid rgba(245,184,28,.4); }
 .rt-tbl .grp-row th small { display: inline; margin-left: 10px; color: var(--muted); font: 600 13px/1 var(--body); letter-spacing: .08em; }

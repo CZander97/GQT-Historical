@@ -24,7 +24,7 @@ function row(label, values, { sub = "", cls = "", shaded = true } = {}) {
   const nums = values.filter((v) => typeof v === "number");
   const max = nums.length ? Math.max(...nums) : null;
   return `<tr class="${cls}"><th scope="row" class="stick stick--1">${esc(label)}${sub ? `<small>${esc(sub)}</small>` : ""}</th>
-    ${values.map((v) => cell(v, v !== null && v === max, shaded)).join("")}</tr>`;
+    ${values.map((v) => cell(v, shaded && v !== null && v === max, shaded)).join("")}</tr>`;   // the plain Overall row marks no "best"
 }
 
 export function renderRatings(el) {
