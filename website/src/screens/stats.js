@@ -1,7 +1,7 @@
 // All Stats: the spreadsheet's All Stats tab as a table. Every player-year is a row,
 // every event a column group (its raw stats, then points). Filter by year and player,
 // switch to points only, sort by any points column.
-import { data, esc, head, foot, pts, stat, statSortValue } from "../ui.js";
+import { data, esc, head, foot, pts, stat, statSortValue, eventsBySlug } from "../ui.js";
 
 const state = { year: "all", player: "all", view: "full", sort: { key: "default", dir: -1 } };
 
@@ -136,7 +136,10 @@ export function renderStats(el, [param] = []) {
     else if (b.dataset.view) state.view = b.dataset.view;
     else if (b.dataset.sort) {
       const key = b.dataset.sort;
-      state.sort = state.sort.key === key ? { key, dir: -state.sort.dir } : { key, dir: key === "player" ? 1 : -1 };
+      // first tap sorts best-first: A-Z for names, lowest first for stats where lower wins (times, placements)
+      const [, slug, label] = key.split(":");
+      const lowerWins = key.startsWith("ev:") && label !== "Points" && eventsBySlug[slug]?.better?.[label] === -1;
+      state.sort = state.sort.key === key ? { key, dir: -state.sort.dir } : { key, dir: key === "player" || lowerWins ? 1 : -1 };
     } else return;
     redraw();
     writeState();

@@ -18,7 +18,8 @@
   <link rel="preload" as="image" href="media/logo-900.webp" fetchpriority="high" />
 </head>
 <body class="at-title">
-  <script>if (location.hash.length > 1) document.body.className = "";   /* a direct link skips the title screen without flashing it */</script>
+  <script>/* a direct link, or a return visit in the same session, skips the title screen without flashing it */
+    try { if (location.hash.length > 1 || sessionStorage.getItem("gqt-title-seen")) document.body.className = ""; } catch { if (location.hash.length > 1) document.body.className = ""; }</script>
   <a class="skip" href="#screen" id="skip">Skip to content</a>
   <!-- the rotating event backdrop (Madden 05's cycling team showcase) -->
   <div class="backdrop" aria-hidden="true">

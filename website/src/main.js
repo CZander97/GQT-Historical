@@ -29,7 +29,11 @@ let cleanup = null;
 function route() {
   const [name, ...params] = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
   cleanup?.(); cleanup = null;
-  if (!name) return setMode("at-title");
+  if (!name) {
+    // the title screen plays once per browser session; after that the bare link opens the menu
+    if (titleSeen()) { history.replaceState(null, "", "#menu"); return route(); }
+    return setMode("at-title");
+  }
   if (name === "menu" || !SCREENS[name]) {
     setMode("at-menu");
     select(bars.findIndex((a) => a.dataset.route === lastRoute), false);
@@ -45,7 +49,7 @@ function route() {
   cleanup = result?.cleanup || null;
   if (!result?.featured) featureEvent(null);
   document.title = `${SCREENS[name].title} · GQT Invitational`;
-  if (!result?.keepScroll) scrollTo(0, 0);
+  if (!(result?.keepScroll && sameScreen)) scrollTo(0, 0);   // keep the scroll only when the same screen re-renders
   // a new screen: focus its title; same screen re-rendered (year/event switch): keep focus on the link used
   const again = sameScreen && focused && [...screen.querySelectorAll("a[href]")].find((a) => a.getAttribute("href") === focused);
   (again || document.getElementById("screen-title"))?.focus({ preventScroll: true });
@@ -63,7 +67,13 @@ addEventListener("hashchange", route);
 
 // ---------- title screen ----------
 
-const start = () => { if (body.classList.contains("at-title")) location.hash = "menu"; };
+// storage can be blocked (private windows); then the title simply plays every visit
+const titleSeen = () => { try { return Boolean(sessionStorage.getItem("gqt-title-seen")); } catch { return false; } };
+const start = () => {
+  if (!body.classList.contains("at-title")) return;
+  try { sessionStorage.setItem("gqt-title-seen", "1"); } catch {}
+  location.hash = "menu";
+};
 document.getElementById("start").addEventListener("click", start);
 
 // ---------- menu: hover / arrows move the red bar, Enter opens, Esc backs out ----------

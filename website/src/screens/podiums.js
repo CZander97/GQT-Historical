@@ -14,7 +14,7 @@ function step(p) {
   const img = photo(p.player);
   return `<li class="step step--${p.rank <= 3 ? p.rank : "x"}" data-rank="${p.rank}">
     <div class="step__fig">${img ? `<img src="${img.src}" width="${img.w}" height="${img.h}" alt="" decoding="async" />` : ""}</div>
-    <div class="step__plate"><span class="step__name">${esc(p.player)}</span><span class="step__score">${pts(p.total, { fixed: true })} <small>pts</small></span></div>
+    <div class="step__plate"><span class="step__name"><a href="#stats/player=${encodeURIComponent(p.player)}">${esc(p.player)}</a></span><span class="step__score">${pts(p.total, { fixed: true })} <small>pts</small></span></div>
     <div class="step__block" aria-hidden="true"><span>${p.rank}</span></div>
     <span class="sr-only">Place ${p.rank}</span>
   </li>`;
@@ -33,7 +33,7 @@ function podium(year) {
     ${rest.length ? `<ol class="field" start="${rest[0].rank}">
       ${rest.map((p) => `<li class="field__row">
         <span class="field__rank num">${p.rank}</span>
-        <span class="field__name">${esc(p.player)}</span>
+        <span class="field__name"><a href="#stats/player=${encodeURIComponent(p.player)}">${esc(p.player)}</a></span>
         <span class="field__total">${pts(p.total, { fixed: true })} <small>pts</small></span>
         <span class="field__gap">${pts(lead - p.total, { fixed: true })} behind</span>
       </li>`).join("")}

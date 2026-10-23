@@ -264,6 +264,57 @@ async function main() {
     };
   }
 
+  // Which way each stat counts, learned from the sheet: within a year, does a higher value earn
+  // more points (+1, e.g. yards) or fewer (-1, e.g. times, placements)? 0 = no clear link.
+  // The stat that tracks points most closely ranks the All-Time board; none -> rank by points.
+  const statNum = (v) => (v && typeof v === "object" ? v.t : typeof v === "number" ? v : null);
+  for (const ev of all.events) {
+    ev.better = {};
+    let best = null;
+    for (const label of ev.statLabels) {
+      let agree = 0, pairs = 0, possible = 0;
+      for (const y of years) {
+        const pts = all.rows.filter((r) => r.year === y && r.results[ev.slug])
+          .map((r) => [statNum(r.results[ev.slug].stats.find((s) => s.label === label)?.v), r.results[ev.slug].points])
+          .filter(([s, p]) => s !== null && typeof p === "number");
+        possible += (pts.length * (pts.length - 1)) / 2;
+        for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+          const ds = Math.sign(pts[i][0] - pts[j][0]), dp = Math.sign(pts[i][1] - pts[j][1]);
+          if (ds && dp) { agree += ds * dp; pairs++; }
+        }
+      }
+      // trust a direction only when the stat differs in at least half the comparisons (a lone bonus doesn't count)
+      const strength = pairs >= possible / 2 && pairs ? agree / pairs : 0;
+      ev.better[label] = Math.abs(strength) >= 0.8 ? Math.sign(strength) : 0;
+      if (ev.better[label] && (!best || Math.abs(strength) > best.strength)) best = { label, dir: ev.better[label], strength };
+    }
+    ev.rankBy = best ? { label: best.label, dir: best.dir } : null;
+  }
+
+  // All-Time: career points per player, and every player-year result per event
+  const allTime = {
+    totals: rankBy(players.map((p) => {
+      const rs = all.rows.filter((r) => r.player === p);
+      return { player: p, total: round(rs.reduce((s, r) => s + (r.total ?? 0), 0)), years: rs.length };
+    }), "total"),
+    events: all.events.filter((ev) => all.rows.some((r) => r.results[ev.slug])).map((ev) => {
+      const by = ev.rankBy;
+      const rows = all.rows.filter((r) => r.results[ev.slug])
+        .map((r) => ({ player: r.player, year: r.year, points: r.results[ev.slug].points, stats: r.results[ev.slug].stats }))
+        .map((x) => ({ ...x, key: by ? statNum(x.stats.find((s) => s.label === by.label)?.v) : x.points }));
+      // ranked stat first (best first, blanks last), then points; a rank is shared only when both match
+      rows.sort((a, b) => (a.key === null) - (b.key === null) || (b.key - a.key) * (by ? by.dir : 1) || (b.points ?? -Infinity) - (a.points ?? -Infinity));
+      let rank = 0;
+      const board = rows.map((x, i) => {
+        const prev = rows[i - 1];
+        if (!prev || prev.key !== x.key || prev.points !== x.points) rank = i + 1;
+        const { key, ...rest } = x;
+        return { ...rest, rank };
+      });
+      return { slug: ev.slug, board };
+    }),
+  };
+
   const ratings = readRatings(eventsBySlug);
   const overalls = readOveralls(new Set(players));
 
@@ -290,6 +341,7 @@ async function main() {
     events: all.events,
     allStats: all.rows,
     byYear,
+    allTime,
     ratings,
     overalls,
     cards,
