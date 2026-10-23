@@ -244,7 +244,8 @@ body.at-screen .screen { display: block; animation: screen-in .28s var(--ease-ou
   /* the image runs behind the logo and the event name: darken its top and bottom so both stay legible */
   .show::after { content: ""; position: absolute; inset: 0; pointer-events: none;
     background: linear-gradient(180deg, rgba(10,14,23,.6) 0%, rgba(10,14,23,0) 24%, rgba(10,14,23,0) 64%, rgba(10,14,23,.9) 100%); }
-  body.at-menu .bigname { opacity: 1; color: #f4f6fa; -webkit-text-stroke: 0;
+  .wordmark { display: none; }   /* phones: the logo alone, so the event image has the top of the screen */
+  body.at-menu .bigname { opacity: .6; color: #f4f6fa; -webkit-text-stroke: 0;
     text-shadow: 0 2px 0 rgba(5,7,12,.95), 0 0 14px rgba(5,7,12,.9), 0 0 2px rgba(5,7,12,1); }
   /* the whole image fits the band's height, never cut top or bottom (the 1.07 leaves room for the
      slow push-in zoom); wide photos run past the screen sides instead. Fades and ghost trail unchanged. */
