@@ -4,7 +4,7 @@
 //
 //   node scripts/data.mjs [path/to/workbook.xlsx]
 //
-// Without a path it uses the newest "GQT Historical Stats*.xlsx" in the project root.
+// Without a path it uses the one "GQT Historical Stats*.xlsx" in the project root.
 import ExcelJS from "exceljs";
 import fs from "node:fs";
 import path from "node:path";
@@ -16,15 +16,12 @@ const outFile = path.resolve(here, "../src/data.json");
 
 function findWorkbook() {
   if (process.argv[2]) return path.resolve(process.argv[2]);
-  // newest first; a fresh git checkout gives every file the same time, so ties go to the
-  // higher-numbered name: "Stats(2)" beats "Stats(1)"
-  const tenSeconds = (f) => Math.round(fs.statSync(f).mtimeMs / 10000);
-  const hits = fs.readdirSync(projectRoot)
-    .filter((f) => /^GQT Historical Stats.*\.xlsx$/i.test(f))
-    .map((f) => path.join(projectRoot, f))
-    .sort((a, b) => tenSeconds(b) - tenSeconds(a) || b.localeCompare(a, undefined, { numeric: true }));
+  // exactly one: GitHub's checkout gives every file the same date, so "the newest" could
+  // differ between this computer and the live build
+  const hits = fs.readdirSync(projectRoot).filter((f) => /^GQT Historical Stats.*\.xlsx$/i.test(f));
   if (!hits.length) throw new Error(`No "GQT Historical Stats*.xlsx" found in ${projectRoot}`);
-  return hits[0];
+  if (hits.length > 1) throw new Error(`Found ${hits.length} spreadsheets (${hits.join(", ")}). Keep only the newest "GQT Historical Stats*.xlsx" in ${projectRoot}.`);
+  return path.join(projectRoot, hits[0]);
 }
 
 const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -245,11 +242,13 @@ async function main() {
   const players = [...new Set(all.rows.map((r) => r.player))].sort();
   const years = [...new Set(all.rows.map((r) => r.year))].sort();
 
-  // check: each total equals the sum of that row's points
-  for (const r of all.rows) {
+  // check: each total equals the sum of that row's points; a mismatch means the sheet was misread,
+  // so stop the build and leave the live site as it was
+  const mismatches = all.rows.map((r) => {
     const sum = round(Object.values(r.results).reduce((s, x) => s + (typeof x.points === "number" ? x.points : 0), 0));
-    if (r.total !== null && Math.abs(sum - r.total) > 0.05) console.warn(`  ! ${r.player} ${r.year}: Total Score ${r.total} but points add up to ${sum}`);
-  }
+    return r.total !== null && Math.abs(sum - r.total) > 0.05 ? `${r.player} ${r.year}: Total Score ${r.total} but points add up to ${sum}` : null;
+  }).filter(Boolean);
+  if (mismatches.length) throw new Error(`Totals don't match the event points:\n  ${mismatches.join("\n  ")}`);
 
   const byYear = {};
   for (const y of years) {

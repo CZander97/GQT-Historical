@@ -30,7 +30,7 @@ jobs:
           cache: npm
           cache-dependency-path: website/package-lock.json
       - run: npm ci
-      - run: npm run build          # reads the newest "GQT Historical Stats*.xlsx", then builds
+      - run: npm run build          # reads the one "GQT Historical Stats*.xlsx", then builds
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
