@@ -11,7 +11,8 @@ Every push to `main` rebuilds the site from the spreadsheet and republishes it i
 
 ## Every year after the Invitational
 
-1. Add the new year's rows to the spreadsheet (All Stats, Ratings, Overalls), same layout as before,
+1. Add the new year's rows to the spreadsheet (All Stats, Ratings, Total Overalls), plus a `<year> RatingsOverall` tab
+   laid out like the others (it becomes a year option on the Ratings page), same layout as before,
    and save it in the project folder. Keep only one `GQT Historical Stats*.xlsx` there: with two, the build stops
    and names them, so delete the old one (git keeps every earlier version).
 2. New event? Add its picture to `Event Images/` (name it after the event, e.g. `Mario_Kart.jpg`;

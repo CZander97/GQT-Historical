@@ -194,10 +194,52 @@ function readRatings(eventsBySlug) {
   return { events: cols.map(({ slug, name, category }) => ({ slug, name, category })), players, average, reference };
 }
 
-// ---------- Overalls (category ratings + weighted Overall) ----------
+// ---------- one year's ratings ("2026 RatingsOverall") ----------
+
+// Top block: events across row 1 (category in row 2), one row of ratings per player.
+// Below it, a header row ending in "Overall" starts the category block, one row per player.
+// Events nobody was rated on that year are left out.
+function readYearRatings(ws, knownPlayers, eventsBySlug) {
+  const cell = (r, c) => cellValue(ws, ws.getRow(r).getCell(c).address);
+  const text = (v) => (typeof v === "string" ? v.trim() : "");
+  const num = (v) => (typeof v === "number" ? round(v, 1) : null);
+  let catRow = 0;
+  for (let r = 1; r <= ws.rowCount && !catRow; r++) {
+    for (let c = 2; c <= ws.columnCount; c++) if (text(cell(r, c)).toLowerCase() === "overall") { catRow = r; break; }
+  }
+  if (!catRow) throw new Error(`Sheet "${ws.name}" has no header row with "Overall"`);
+
+  const cols = [];
+  for (let c = 2; c <= ws.columnCount; c++) {
+    const name = text(cell(1, c));
+    if (name) cols.push({ c, name, slug: slug(name), category: text(cell(2, c)) || eventsBySlug[slug(name)]?.category || null });
+  }
+  const players = {};
+  for (let r = 2; r < catRow; r++) {
+    const p = text(cell(r, 1));
+    if (knownPlayers.has(p)) players[p] = Object.fromEntries(cols.map(({ c, slug }) => [slug, num(cell(r, c))]));
+  }
+  const events = cols.filter(({ slug }) => Object.values(players).some((v) => v[slug] !== null))
+    .map(({ slug, name, category }) => ({ slug, name, category }));
+  for (const v of Object.values(players)) for (const { slug } of cols) if (!events.some((e) => e.slug === slug)) delete v[slug];
+
+  const catCols = [];
+  for (let c = 2; c <= ws.columnCount; c++) if (text(cell(catRow, c))) catCols.push({ c, name: text(cell(catRow, c)) });
+  const overalls = {};
+  for (let r = catRow + 1; r <= ws.rowCount; r++) {
+    const p = text(cell(r, 1));
+    if (knownPlayers.has(p)) overalls[p] = Object.fromEntries(catCols.map(({ c, name }) => [name, num(cell(r, c))]));
+  }
+  return {
+    events, players,
+    overalls: { categories: catCols.map((x) => x.name).filter((n) => n.toLowerCase() !== "overall"), players: overalls },
+  };
+}
+
+// ---------- Total Overalls (career category ratings + weighted Overall) ----------
 
 function readOveralls(knownPlayers) {
-  const ws = sheet("Overalls");
+  const ws = sheet("Total Overalls");
   const cols = [];
   for (let c = 2; c <= ws.columnCount; c++) {
     const h = cellValue(ws, ws.getRow(1).getCell(c).address);
@@ -316,6 +358,12 @@ async function main() {
 
   const ratings = readRatings(eventsBySlug);
   const overalls = readOveralls(new Set(players));
+  // "Ratings" and "Total Overalls" are career; each year has its own "<year> RatingsOverall" tab
+  ratings.years = {};
+  for (const ws of wb.worksheets) {
+    const y = ws.name.match(/^(\d{4})\s*Ratings/i)?.[1];
+    if (y) ratings.years[y] = readYearRatings(ws, new Set(players), eventsBySlug);
+  }
 
   // player cards: category bars, rounded Overall, top four event ratings
   const cards = players.map((name) => {
