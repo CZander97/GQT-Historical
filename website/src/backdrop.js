@@ -11,7 +11,7 @@ const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const show = document.getElementById("show");
 const big = document.getElementById("bigname");
 const flash = document.getElementById("flash");
-const root = document.documentElement.style;
+const root = document.querySelector(".backdrop").style;   // its variables, set here so a slide change restyles only the backdrop, not the page
 
 // Shuffle once per visit so every visit opens on a different event.
 const slides = [...media.events];
@@ -33,8 +33,8 @@ function figureFor(s) {
   const size = `width="${s.w}" height="${s.h}"`;
   const still = (c) => `<img class="${cls} ${c}" src="${s.poster}" ${size} alt="" decoding="async" style="${cap}">`;
   const moving = (c) => `<video class="${cls} ${c}" src="${s.video}" poster="${s.poster}" ${size} muted loop playsinline preload="none" style="${cap}"></video>`;
-  const one = s.video && !REDUCED ? moving : still;
-  f.innerHTML = one("ghost") + one("hero");
+  // the faint, blurred ghost is a still either way: one video decoder per slide, not two
+  f.innerHTML = still("ghost") + (s.video && !REDUCED ? moving : still)("hero");
   show.appendChild(f);
   figs.set(s.slug, f);
   return f;
@@ -42,11 +42,8 @@ function figureFor(s) {
 
 function setSlide(s) {
   const f = figureFor(s);
-  for (const [slug, other] of figs) {
-    const on = other === f;
-    other.classList.toggle("on", on);
-    other.querySelectorAll("video").forEach((v) => (on && !paused ? v.play().catch(() => {}) : v.pause()));
-  }
+  for (const other of figs.values()) other.classList.toggle("on", other === f);
+  syncVideo();
   // restart the push-in for this slide
   f.querySelectorAll(".media").forEach((m) => { m.style.animation = "none"; void m.offsetWidth; m.style.animation = ""; });
   root.setProperty("--tint", s.tint);
@@ -68,16 +65,19 @@ export function startBackdrop() {
   advance();
   clearInterval(timer);
   timer = setInterval(advance, SLIDE_MS);
-  document.addEventListener("visibilitychange", () => {
-    const v = show.querySelector("figure.on video");
-    if (document.hidden || paused) v?.pause(); else v?.play().catch(() => {});
-  });
+  document.addEventListener("visibilitychange", syncVideo);
+}
+
+/** The current slide's loop plays only when it can be seen: not paused, tab showing, not behind an inner screen. */
+export function syncVideo() {
+  const live = !paused && !document.hidden && !document.body.classList.contains("at-screen");
+  show.querySelectorAll("video").forEach((v) => (live && v.closest("figure.on") ? v.play().catch(() => {}) : v.pause()));
 }
 
 /** The pause control: freezes the rotation and any playing loop on the current slide. */
 export function setPaused(on) {
   paused = on;
-  show.querySelectorAll("figure.on video").forEach((v) => (on ? v.pause() : v.play().catch(() => {})));
+  syncVideo();
 }
 
 /** Hold the backdrop on one event (a leaderboard for that event is open), or release with null. */

@@ -3,7 +3,7 @@ import "./style.css";
 import "./screens.css";
 import "./cards.css";
 import { data, media, esc, eventsBySlug, pts, stat } from "./ui.js";
-import { startBackdrop, featureEvent, layout, setPaused } from "./backdrop.js";
+import { startBackdrop, featureEvent, layout, setPaused, syncVideo } from "./backdrop.js";
 import { renderPodiums } from "./screens/podiums.js";
 import { renderLeaderboards } from "./screens/leaderboards.js";
 import { renderCards } from "./screens/cards.js";
@@ -60,6 +60,7 @@ function setMode(mode) {
   body.classList.remove("at-title", "at-menu", "at-screen");
   body.classList.add(mode);
   if (mode !== "at-screen") screen.innerHTML = "";
+  syncVideo();   // the backdrop's loop stops behind inner screens
   if (mode === "at-menu" && was !== "at-menu") requestAnimationFrame(layout);
 }
 
